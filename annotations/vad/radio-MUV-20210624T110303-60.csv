@@ -1,0 +1,4 @@
+start,stop,label
+0.0,33.808,nonspeech
+33.808,36.888,speech
+36.888,60.011,nonspeech

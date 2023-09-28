@@ -1,0 +1,11 @@
+label,start,stop
+music,0.0,4.64
+noEnergy,4.64,6.2
+noise,6.2,15.26
+music,15.26,35.14
+noEnergy,35.14,37.18
+music,37.18,38.9
+male,38.9,48.36
+noEnergy,48.36,48.86
+male,48.86,59.0
+music,59.0,60.28

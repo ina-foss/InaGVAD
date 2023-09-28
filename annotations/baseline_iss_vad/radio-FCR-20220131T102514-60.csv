@@ -1,0 +1,12 @@
+label,start,stop
+male,0.0,10.4
+noEnergy,10.4,10.82
+male,10.82,14.3
+noEnergy,14.3,15.08
+male,15.08,24.54
+noEnergy,24.54,25.12
+male,25.12,35.44
+noEnergy,35.44,36.14
+male,36.14,37.16
+noEnergy,37.16,37.6
+male,37.6,60.02

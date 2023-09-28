@@ -1,0 +1,14 @@
+start,stop,label
+0.0,13.693,speech
+13.693,14.119,nonspeech
+14.119,21.886,speech
+21.886,22.281,nonspeech
+22.281,25.259,speech
+25.259,25.813,nonspeech
+25.813,27.105,speech
+27.105,27.505,nonspeech
+27.505,28.486,speech
+28.486,29.324,nonspeech
+29.324,55.829,speech
+55.829,56.308,nonspeech
+56.308,60.565,speech

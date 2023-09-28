@@ -1,0 +1,10 @@
+label,start,stop
+music,0.0,2.84
+male,2.84,6.76
+female,6.76,25.6
+male,25.6,45.36
+female,45.36,46.84
+male,46.84,50.66
+female,50.66,52.88
+music,52.88,54.44
+female,54.44,60.0

@@ -1,0 +1,13 @@
+label,start,stop
+music,0.0,13.04
+noise,13.04,16.8
+music,16.8,26.82
+male,26.82,29.1
+female,29.1,30.36
+noise,30.36,32.56
+male,32.56,34.54
+female,34.54,36.72
+noise,36.72,40.64
+music,40.64,45.78
+noise,45.78,52.68
+music,52.68,60.48

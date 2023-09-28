@@ -1,0 +1,9 @@
+label,start,stop
+female,0.0,21.02
+male,21.02,25.18
+noEnergy,25.18,26.3
+female,26.3,41.08
+noEnergy,41.08,41.9
+male,41.9,54.48
+noEnergy,54.48,55.3
+male,55.3,60.4

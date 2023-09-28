@@ -1,0 +1,6 @@
+label,start,stop
+male,0.0,12.06
+female,12.06,14.42
+male,14.42,52.64
+noise,52.64,54.5
+male,54.5,60.0

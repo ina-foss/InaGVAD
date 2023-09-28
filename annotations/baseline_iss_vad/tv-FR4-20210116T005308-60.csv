@@ -1,0 +1,16 @@
+label,start,stop
+male,0.0,1.24
+female,1.24,12.4
+male,12.4,14.96
+female,14.96,16.44
+male,16.44,37.3
+noEnergy,37.3,38.0
+music,38.0,39.98
+female,39.98,45.02
+male,45.02,49.56
+female,49.56,54.38
+noEnergy,54.38,54.94
+female,54.94,55.98
+noEnergy,55.98,56.92
+male,56.92,59.94
+female,59.94,62.06

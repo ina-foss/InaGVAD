@@ -1,0 +1,10 @@
+label,start,stop
+noise,0.0,0.3
+noEnergy,0.3,1.4
+music,1.4,4.88
+noEnergy,4.88,5.54
+music,5.54,20.72
+noEnergy,20.72,21.36
+noise,21.36,24.0
+noEnergy,24.0,24.42
+music,24.42,60.64
