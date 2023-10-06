@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-C+_-141814" version="3" version_date="230403">
+<Episode>
+<Section type="report" startTime="0" endTime="60.501">
+<Turn startTime="0" endTime="60.501">
+<Sync time="0"/>
+MU2
+<Sync time="0.3"/>
+HA
+<Sync time="1.776"/>
+MU2
+<Sync time="3.558"/>
+HA
+<Sync time="4.012"/>
+MU2
+<Sync time="6.073"/>
+HA
+<Sync time="6.422"/>
+
+<Sync time="7.888"/>
+HA
+<Sync time="8.563"/>
+MU2
+<Sync time="9.987"/>
+HA
+<Sync time="11.116"/>
+MU2
+<Sync time="13.978"/>
+BR
+<Sync time="14.664"/>
+MU2+BR
+<Sync time="27.106"/>
+HA
+<Sync time="29.378"/>
+FA
+<Sync time="30.343"/>
+MU2+BR
+<Sync time="32.81"/>
+HA
+<Sync time="34.576"/>
+FA
+<Sync time="35.805"/>
+HA
+<Sync time="36.533"/>
+MU2+BR
+<Sync time="54.521"/>
+HA
+<Sync time="55.649"/>
+MU2+BR
+<Sync time="58.499"/>
+FA
+<Sync time="59.031"/>
+MU2
+</Turn>
+</Section>
+</Episode>
+</Trans>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-T5M-144346" version="2" version_date="230403">
+<Episode>
+<Section type="report" startTime="0" endTime="61.141">
+<Turn startTime="0" endTime="61.141">
+<Sync time="0"/>
+MU2
+<Sync time="0.790"/>
+HA
+<Sync time="1.233"/>
+
+<Sync time="1.838"/>
+HA
+<Sync time="2.677"/>
+MU2
+<Sync time="8.734"/>
+FA
+<Sync time="10.740"/>
+RE
+<Sync time="11.105"/>
+FA
+<Sync time="12.017"/>
+RE
+<Sync time="12.315"/>
+FA
+<Sync time="14.322"/>
+RE
+<Sync time="14.797"/>
+FA
+<Sync time="19.987"/>
+RE
+<Sync time="20.477"/>
+FA
+<Sync time="22.539"/>
+MU2
+<Sync time="23.975"/>
+FA
+<Sync time="26.786"/>
+RE
+<Sync time="27.454"/>
+HA
+<Sync time="28.005"/>
+RE
+<Sync time="28.646"/>
+FA
+<Sync time="31.271"/>
+
+<Sync time="31.94"/>
+FA
+<Sync time="33.754"/>
+RE
+<Sync time="34.323"/>
+FA
+<Sync time="37.412"/>
+
+<Sync time="37.811"/>
+FA
+<Sync time="38.917"/>
+
+<Sync time="39.323"/>
+FA
+<Sync time="41.22"/>
+RE
+<Sync time="41.847"/>
+FA
+<Sync time="50.275"/>
+RE
+<Sync time="50.853"/>
+FA
+<Sync time="52.580"/>
+FA-
+<Sync time="53.244"/>
+FA
+<Sync time="58.618"/>
+RE
+<Sync time="58.971"/>
+FA
+</Turn>
+</Section>
+</Episode>
+</Trans>

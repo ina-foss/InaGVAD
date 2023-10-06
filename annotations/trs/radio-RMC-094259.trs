@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-RMC-094259" version="2" version_date="230403">
+<Episode>
+<Section type="report" startTime="0" endTime="60.032">
+<Turn startTime="0" endTime="60.032">
+<Sync time="0"/>
+HA
+<Sync time="29.985"/>
+HA-
+<Sync time="30.896"/>
+HA
+<Sync time="57.408"/>
+RE
+<Sync time="57.809"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

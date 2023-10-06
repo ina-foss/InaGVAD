@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-FCR-115618" version="2" version_date="230330">
+<Episode>
+<Section type="report" startTime="0" endTime="60.032">
+<Turn startTime="0" endTime="60.032">
+<Sync time="0"/>
+HA
+<Sync time="0.2"/>
+RE
+<Sync time="0.606"/>
+HA
+<Sync time="6.307"/>
+RE
+<Sync time="6.792"/>
+
+<Sync time="10.859"/>
+RE
+<Sync time="11.465"/>
+HA
+<Sync time="17.128"/>
+
+<Sync time="17.634"/>
+HA
+<Sync time="22.996"/>
+RE
+<Sync time="23.407"/>
+
+<Sync time="28.513"/>
+RE
+<Sync time="28.887"/>
+HA
+<Sync time="32.795"/>
+RE
+<Sync time="33.206"/>
+HA
+<Sync time="36.488"/>
+RE
+<Sync time="36.857"/>
+HA
+<Sync time="40.935"/>
+RE
+<Sync time="41.283"/>
+HA
+<Sync time="43.164"/>
+RE
+<Sync time="43.496"/>
+HA
+<Sync time="47.632"/>
+RE
+<Sync time="48.001"/>
+HA
+<Sync time="51.362"/>
+RE
+<Sync time="51.863"/>
+HA
+<Sync time="56.36"/>
+RE
+<Sync time="56.692"/>
+HA
+<Sync time="59.447"/>
+RE
+<Sync time="59.837"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-T5M-224001" version="3" version_date="230621">
+<Episode>
+<Section type="report" startTime="0" endTime="61.312">
+<Turn startTime="0" endTime="61.312">
+<Sync time="0"/>
+
+<Sync time="3.279"/>
+BR
+<Sync time="4.169"/>
+
+<Sync time="6.891"/>
+FA
+<Sync time="8.081"/>
+
+<Sync time="10.232"/>
+FA
+<Sync time="10.838"/>
+
+<Sync time="13.613"/>
+FA
+<Sync time="16.666"/>
+BR
+<Sync time="46.551"/>
+
+<Sync time="50.226"/>
+BR
+<Sync time="57.566"/>
+MU1
+</Turn>
+</Section>
+</Episode>
+</Trans>

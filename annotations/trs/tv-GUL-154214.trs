@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-GUL-154214" version="4" version_date="230328">
+<Episode>
+<Section type="report" startTime="0" endTime="61.291">
+<Turn startTime="0" endTime="61.291">
+<Sync time="0"/>
+BR
+<Sync time="5.3"/>
+IA
+<Sync time="5.58"/>
+MU2
+<Sync time="6.108"/>
+IE
+<Sync time="6.369"/>
+FA
+<Sync time="7.450"/>
+IE
+<Sync time="7.782"/>
+MU2
+<Sync time="9.601"/>
+BR
+<Sync time="9.813"/>
+IE-
+<Sync time="9.987"/>
+BR
+<Sync time="10.647"/>
+FA
+<Sync time="12.608"/>
+BR
+<Sync time="13.478"/>
+MU2
+<Sync time="14.490"/>
+AU
+<Sync time="15.677"/>
+BH
+<Sync time="16.273"/>
+FA
+<Sync time="17.258"/>
+BR
+<Sync time="17.538"/>
+MU2
+<Sync time="18.893"/>
+BR
+<Sync time="20.544"/>
+BH
+<Sync time="22.086"/>
+AU
+<Sync time="23.830"/>
+IE
+<Sync time="25.532"/>
+BR
+<Sync time="26.455"/>
+IE
+<Sync time="27.995"/>
+BR
+<Sync time="28.396"/>
+IE-
+<Sync time="29.114"/>
+BR
+<Sync time="31.031"/>
+AU
+<Sync time="31.768"/>
+FA
+<Sync time="33.666"/>
+BH
+<Sync time="34.963"/>
+IE
+<Sync time="37.672"/>
+BH
+<Sync time="40.529"/>
+FA-
+<Sync time="41.531"/>
+HE
+<Sync time="44.124"/>
+BR+MU2
+<Sync time="50.068"/>
+AU
+<Sync time="51.518"/>
+FA
+<Sync time="53.951"/>
+IE
+<Sync time="57.26"/>
+FA
+<Sync time="58.577"/>
+BR+MU2
+<Sync time="60.658"/>
+AU
+</Turn>
+</Section>
+</Episode>
+</Trans>

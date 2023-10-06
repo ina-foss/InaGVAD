@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-FBL-174018" version="2" version_date="230323">
+<Episode>
+<Section type="report" startTime="0" endTime="60.032">
+<Turn startTime="0" endTime="60.032">
+<Sync time="0"/>
+MU1
+<Sync time="37.328"/>
+HA
+<Sync time="41.312"/>
+
+<Sync time="41.690"/>
+BR
+<Sync time="42.318"/>
+HA
+<Sync time="44.328"/>
+FA
+<Sync time="45.422"/>
+MU2
+<Sync time="46.511"/>
+HA
+<Sync time="52.995"/>
+MU2
+<Sync time="53.593"/>
+HA
+<Sync time="54.653"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

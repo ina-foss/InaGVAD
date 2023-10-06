@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-MUV-103937" version="4" version_date="230424">
+<Episode>
+<Section type="report" startTime="0" endTime="60.032">
+<Turn startTime="0" endTime="60.032">
+<Sync time="0"/>
+MU1
+<Sync time="15.906"/>
+FA
+<Sync time="19.337"/>
+JI
+<Sync time="21.166"/>
+FA
+<Sync time="26.167"/>
+RE
+<Sync time="26.62"/>
+FA
+<Sync time="37.839"/>
+HA
+<Sync time="39.107"/>
+BR
+<Sync time="39.950"/>
+FA
+<Sync time="40.684"/>
+HA+HA
+<Sync time="42.049"/>
+HA
+<Sync time="43.803"/>
+BR
+<Sync time="44.731"/>
+FA
+<Sync time="49.359"/>
+RI
+<Sync time="49.801"/>
+HA
+<Sync time="52.584"/>
+RE
+<Sync time="52.969"/>
+HA
+<Sync time="54.170"/>
+FA
+<Sync time="57.772"/>
+HA+FA
+<Sync time="58.789"/>
+BR
+<Sync time="59.189"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

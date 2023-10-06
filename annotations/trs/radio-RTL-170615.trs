@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-RTL-170615" version="2" version_date="230330">
+<Episode>
+<Section type="report" startTime="0" endTime="60.011">
+<Turn startTime="0" endTime="60.011">
+<Sync time="0"/>
+HA
+<Sync time="11.958"/>
+FA
+<Sync time="13.633"/>
+RI
+<Sync time="14.298"/>
+HA
+<Sync time="21.043"/>
+RI
+<Sync time="23.668"/>
+HA
+<Sync time="33.266"/>
+RE
+<Sync time="33.588"/>
+HA
+<Sync time="52.65"/>
+AP
+<Sync time="54.684"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

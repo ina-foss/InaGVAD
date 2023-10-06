@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-F24-072937" version="2" version_date="230329">
+<Episode>
+<Section type="report" startTime="0" endTime="61.141">
+<Turn startTime="0" endTime="61.141">
+<Sync time="0"/>
+HA
+<Sync time="1.092"/>
+FA
+<Sync time="7.292"/>
+MU2
+<Sync time="8.365"/>
+FA
+<Sync time="14.3"/>
+MU2
+<Sync time="14.903"/>
+HA
+<Sync time="22.391"/>
+MU2
+<Sync time="24.509"/>
+FA
+<Sync time="27.555"/>
+MU2
+<Sync time="30.159"/>
+JI
+<Sync time="32.200"/>
+HA
+<Sync time="38.497"/>
+RE
+<Sync time="38.882"/>
+HA
+<Sync time="43.562"/>
+RE
+<Sync time="44.127"/>
+HA
+<Sync time="55.103"/>
+RE
+<Sync time="55.667"/>
+HA
+<Sync time="58.054"/>
+RE
+<Sync time="58.423"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-BFT-050719" version="3" version_date="230419">
+<Episode>
+<Section type="report" startTime="0" endTime="61.931">
+<Turn startTime="0" endTime="61.931">
+<Sync time="0"/>
+HA
+<Sync time="1.312"/>
+RE
+<Sync time="1.675"/>
+HA
+<Sync time="4.666"/>
+RE
+<Sync time="4.956"/>
+HA
+<Sync time="12.760"/>
+RE
+<Sync time="13.266"/>
+HA
+<Sync time="22.245"/>
+RE
+<Sync time="22.641"/>
+HA
+<Sync time="29.29"/>
+
+<Sync time="29.614"/>
+HA
+<Sync time="35.116"/>
+BR
+<Sync time="35.468"/>
+HA
+<Sync time="36.167"/>
+
+<Sync time="36.956"/>
+HA
+<Sync time="38.249"/>
+
+<Sync time="39.100"/>
+HA
+<Sync time="40.011"/>
+FA
+<Sync time="42.371"/>
+
+<Sync time="42.72"/>
+HA
+<Sync time="44.363"/>
+
+<Sync time="44.827"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

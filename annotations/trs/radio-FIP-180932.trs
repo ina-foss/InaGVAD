@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-FIP-180932" version="2" version_date="230328">
+<Episode>
+<Section type="report" startTime="0" endTime="60.011">
+<Turn startTime="0" endTime="60.011">
+<Sync time="0"/>
+MU1
+<Sync time="15.974"/>
+
+<Sync time="16.406"/>
+MU1
+<Sync time="26.369"/>
+RE
+<Sync time="26.738"/>
+MU1
+</Turn>
+</Section>
+</Episode>
+</Trans>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-LCI-022702" version="2" version_date="230418">
+<Episode>
+<Section type="report" startTime="0" endTime="60.864">
+<Turn startTime="0" endTime="60.864">
+<Sync time="0"/>
+HA
+<Sync time="23.052"/>
+RE
+<Sync time="23.442"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-MUV-031209" version="2" version_date="230403">
+<Episode>
+<Section type="report" startTime="0" endTime="60.032">
+<Turn startTime="0" endTime="60.032">
+<Sync time="0"/>
+MU1
+<Sync time="12.341"/>
+JI
+<Sync time="13.958"/>
+FA
+<Sync time="14.711"/>
+MU1
+<Sync time="15.27"/>
+HA
+<Sync time="16.782"/>
+FA
+<Sync time="19.142"/>
+MU1
+</Turn>
+</Section>
+</Episode>
+</Trans>

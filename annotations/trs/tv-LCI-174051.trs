@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-LCI-174051" version="3" version_date="230419">
+<Episode>
+<Section type="report" startTime="0" endTime="61.995">
+<Turn startTime="0" endTime="61.995">
+<Sync time="0"/>
+HA
+<Sync time="2.601"/>
+
+<Sync time="3.035"/>
+HA
+<Sync time="8.203"/>
+RE
+<Sync time="8.646"/>
+HA
+<Sync time="12.845"/>
+RE
+<Sync time="13.416"/>
+HA-
+<Sync time="14.115"/>
+HA
+<Sync time="18.794"/>
+HA+FA
+<Sync time="21.481"/>
+HA-
+<Sync time="22.239"/>
+HA
+<Sync time="25.307"/>
+FA
+<Sync time="33.400"/>
+FA-
+<Sync time="34.343"/>
+FA
+<Sync time="49.161"/>
+
+<Sync time="49.679"/>
+FA
+</Turn>
+</Section>
+</Episode>
+</Trans>

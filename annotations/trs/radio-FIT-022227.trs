@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-FIT-022227" version="2" version_date="230328">
+<Episode>
+<Section type="report" startTime="0" endTime="60.032">
+<Turn startTime="0" endTime="60.032">
+<Sync time="0"/>
+
+<Sync time="0.321"/>
+HA
+<Sync time="2.597"/>
+RE
+<Sync time="2.972"/>
+HA
+<Sync time="5.753"/>
+RE
+<Sync time="6.322"/>
+HA
+<Sync time="9.708"/>
+RE
+<Sync time="10.234"/>
+HA
+<Sync time="11.246"/>
+RE
+<Sync time="11.773"/>
+HA
+<Sync time="13.944"/>
+
+<Sync time="14.313"/>
+HA
+<Sync time="17.269"/>
+
+<Sync time="17.796"/>
+HS
+<Sync time="20.320"/>
+MU2+BR
+<Sync time="22.017"/>
+HS
+<Sync time="24.298"/>
+MU2+BR
+<Sync time="25.905"/>
+HS
+<Sync time="26.98"/>
+MU2
+<Sync time="28.055"/>
+HS
+<Sync time="29.077"/>
+MU2
+<Sync time="29.478"/>
+HS
+<Sync time="30.516"/>
+MU2
+<Sync time="31.443"/>
+HS
+<Sync time="34.172"/>
+MU2
+<Sync time="34.678"/>
+HS
+<Sync time="37.402"/>
+MU2
+<Sync time="38.393"/>
+HS
+<Sync time="41.617"/>
+MU2
+<Sync time="42.766"/>
+HS
+<Sync time="44.083"/>
+MU2
+<Sync time="45.037"/>
+HS
+<Sync time="45.891"/>
+MU2
+<Sync time="46.507"/>
+HS
+<Sync time="48.652"/>
+MU2
+<Sync time="50.617"/>
+HA
+<Sync time="57.197"/>
+RE
+<Sync time="57.624"/>
+HA
+<Sync time="58.825"/>
+MU1
+</Turn>
+</Section>
+</Episode>
+</Trans>

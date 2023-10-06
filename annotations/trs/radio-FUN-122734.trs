@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-FUN-122734" version="7" version_date="230328">
+<Episode>
+<Section type="report" startTime="0" endTime="60.011">
+<Turn startTime="0" endTime="60.011">
+<Sync time="0"/>
+HA
+<Sync time="9.335"/>
+MU2
+<Sync time="11.217"/>
+HA
+<Sync time="14.603"/>
+FA
+<Sync time="17.608"/>
+HA
+<Sync time="20.429"/>
+FA
+<Sync time="21.752"/>
+MU2
+<Sync time="22.194"/>
+FA
+<Sync time="43.795"/>
+BR
+<Sync time="44.663"/>
+FA
+<Sync time="49.778"/>
+BR
+<Sync time="52.306"/>
+FA-
+<Sync time="52.818"/>
+BR
+<Sync time="53.451"/>
+RI
+<Sync time="54.020"/>
+HA
+<Sync time="59.568"/>
+
+</Turn>
+</Section>
+</Episode>
+</Trans>

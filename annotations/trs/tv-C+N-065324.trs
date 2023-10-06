@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="tv-C+N-065324" version="2" version_date="230414">
+<Episode>
+<Section type="report" startTime="0" endTime="60.800">
+<Turn startTime="0" endTime="60.800">
+<Sync time="0"/>
+HA
+<Sync time="12.971"/>
+RE
+<Sync time="13.308"/>
+HA
+<Sync time="24.573"/>
+BR
+<Sync time="24.971"/>
+HA
+<Sync time="40.300"/>
+RE
+<Sync time="40.695"/>
+HA
+</Turn>
+</Section>
+</Episode>
+</Trans>

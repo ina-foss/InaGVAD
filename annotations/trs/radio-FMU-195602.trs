@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="automatic" audio_filename="radio-FMU-195602" version="2" version_date="230330">
+<Episode>
+<Section type="report" startTime="0" endTime="60.032">
+<Turn startTime="0" endTime="60.032">
+<Sync time="0"/>
+MU1
+<Sync time="36.552"/>
+HA
+<Sync time="37.524"/>
+MU2
+<Sync time="38.220"/>
+HA
+<Sync time="38.545"/>
+MU1
+<Sync time="39.800"/>
+
+<Sync time="40.258"/>
+MU1
+</Turn>
+</Section>
+</Episode>
+</Trans>
