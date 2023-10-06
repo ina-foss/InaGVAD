@@ -1,0 +1,16 @@
+label,start,stop
+nonspeech,0.0,0.01
+speech,0.01,0.33
+nonspeech,0.33,0.54
+speech,0.54,3.74
+nonspeech,3.74,3.76
+speech,3.76,18.84
+nonspeech,18.84,18.93
+speech,18.93,24.45
+nonspeech,24.45,26.1
+speech,26.1,49.25
+nonspeech,49.25,49.74
+speech,49.74,56.25
+nonspeech,56.25,56.42
+speech,56.42,59.98
+nonspeech,59.98,59.99
