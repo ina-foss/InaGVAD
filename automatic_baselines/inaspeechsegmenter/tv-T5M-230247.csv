@@ -1,0 +1,13 @@
+label,start,stop
+male,0.0,1.8800000000000001
+noEnergy,1.8800000000000001,2.5
+noise,2.5,3.72
+music,3.72,9.68
+female,9.68,30.18
+noEnergy,30.18,30.68
+female,30.68,53.02
+male,53.02,55.84
+noEnergy,55.84,56.6
+male,56.6,57.7
+noEnergy,57.7,58.1
+male,58.1,60.28
