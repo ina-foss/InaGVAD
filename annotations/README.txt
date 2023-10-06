@@ -22,3 +22,7 @@
 
 
 * trs : original annotations realized with Transcriber
+* vad : voice activity detection reference
+* gender : speaker gender prediction reference
+* gender_uem : exclude speech portions where annotators were not able to identify
+    gender and/or overlapped speech involving speakers with different gender
