@@ -1,0 +1,17 @@
+start,stop,label
+0.1,2.2,speech
+2.6,4.6,speech
+5.1,12.1,speech
+12.2,14.5,speech
+14.7,17.3,speech
+17.5,20.1,speech
+20.3,21.8,speech
+22.1,25.0,speech
+25.2,29.6,speech
+29.8,34.1,speech
+34.2,37.4,speech
+37.5,39.0,speech
+39.1,41.0,speech
+41.6,52.5,speech
+52.6,55.5,speech
+55.6,61.4,speech
