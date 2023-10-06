@@ -1,8 +1,0 @@
-label,start,stop
-male,0.0,0.14
-noEnergy,0.14,0.58
-male,0.58,3.5
-noEnergy,3.5,3.92
-male,3.92,30.02
-female,30.02,32.34
-music,32.34,60.0
