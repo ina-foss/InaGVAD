@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE Trans SYSTEM "trans-14.dtd">
-<Trans scribe="automatic" audio_filename="tv-TFX-230837" version="3" version_date="230328">
+<Trans scribe="automatic" audio_filename="tv-TFX-230837" version="4" version_date="231013">
 <Episode>
 <Section type="report" startTime="0" endTime="60.501">
 <Turn startTime="0" endTime="60.501">
@@ -41,13 +41,13 @@ HA
 <Sync time="22.041"/>
 FA-
 <Sync time="22.462"/>
-
+MU2
 <Sync time="22.841"/>
 HA
 <Sync time="23.205"/>
 FA-
 <Sync time="23.552"/>
-
+MU2
 <Sync time="24.401"/>
 HA
 <Sync time="24.796"/>
@@ -89,7 +89,7 @@ FA
 <Sync time="50.560"/>
 RI
 <Sync time="50.839"/>
-
+MU2
 <Sync time="51.176"/>
 FA
 <Sync time="52.83"/>
