@@ -1,0 +1,7 @@
+start,stop,gender,canal
+0.0,19.55,female,studio
+19.55,23.04,female,telephone
+23.04,31.86,female,studio
+31.86,48.62,male,studio
+48.62,58.6,male,studio
+58.6,60.76,female,studio

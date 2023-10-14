@@ -1,0 +1,7 @@
+;; cluster S10 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-M6_-002520 1 3218 739 M S U S10
+tv-M6_-002520 1 3986 1838 M S U S10
+;; cluster S12 [ score:FS = -33.078249273271844 ] [ score:FT = -33.885756851885546 ] [ score:MS = -32.80972647339345 ] [ score:MT = -33.63175190940109 ] 
+tv-M6_-002520 1 5824 260 M S U S12
+;; cluster S3 [ score:FS = -33.75102426939596 ] [ score:FT = -34.04920072576061 ] [ score:MS = -32.69328067365713 ] [ score:MT = -33.36618366861921 ] 
+tv-M6_-002520 1 1352 367 M S U S3

@@ -1,0 +1,12 @@
+;; cluster S0 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-BFT-050937 1 0 525 M S U S0
+tv-BFT-050937 1 1129 1045 M S U S0
+tv-BFT-050937 1 3720 626 M S U S0
+;; cluster S1 [ score:FS = -31.53771227300207 ] [ score:FT = -32.88487247740853 ] [ score:MS = -32.12576499529694 ] [ score:MT = -32.941849262703194 ] 
+tv-BFT-050937 1 525 604 F S U S1
+;; cluster S4 [ score:FS = -32.69405029114796 ] [ score:FT = -34.1799015100874 ] [ score:MS = -34.51472576505912 ] [ score:MT = -35.05634794308297 ] 
+tv-BFT-050937 1 2174 1546 F S U S4
+;; cluster S7 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-BFT-050937 1 4360 917 M S U S7
+;; cluster S8 [ score:FS = -33.2009288974905 ] [ score:FT = -33.94164827132711 ] [ score:MS = -33.23560685967994 ] [ score:MT = -34.00170914485565 ] 
+tv-BFT-050937 1 5288 875 F S U S8

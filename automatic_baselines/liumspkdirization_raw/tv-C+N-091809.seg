@@ -1,0 +1,9 @@
+;; cluster S0 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-C+N-091809 1 0 278 M S U S0
+tv-C+N-091809 1 289 680 M S U S0
+tv-C+N-091809 1 1030 837 M S U S0
+;; cluster S10 [ score:FS = -33.96456672631547 ] [ score:FT = -34.815406898925126 ] [ score:MS = -33.086553328211416 ] [ score:MT = -34.28590332783415 ] 
+tv-C+N-091809 1 2395 1853 M S U S10
+tv-C+N-091809 1 4248 1849 M S U S10
+;; cluster S7 [ score:FS = -33.32115023061984 ] [ score:FT = -34.281122272794086 ] [ score:MS = -32.67135003523719 ] [ score:MT = -33.411324716183486 ] 
+tv-C+N-091809 1 1867 518 M S U S7

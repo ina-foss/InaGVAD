@@ -1,0 +1,5 @@
+;; cluster S0 [ score:FS = -34.76447327394468 ] [ score:FT = -35.36681281278127 ] [ score:MS = -34.73510534355402 ] [ score:MT = -35.20450932880991 ] 
+radio-MUV-061408 1 0 189 M S U S0
+radio-MUV-061408 1 216 217 M S U S0
+;; cluster S4 [ score:FS = -33.50143301408384 ] [ score:FT = -33.80079345450218 ] [ score:MS = -33.21057663900119 ] [ score:MT = -33.71229282534329 ] 
+radio-MUV-061408 1 2448 203 M S U S4

@@ -1,0 +1,6 @@
+;; cluster S2 [ merge HCLR 0 = S2 in S4 with 1.3884376576835264 ] [ score:FS = -34.58120714145307 ] [ score:FT = -34.80966572494684 ] [ score:MS = -34.26722120211311 ] [ score:MT = -34.79126891932451 ] 
+tv-FR2-193711 1 1912 220 M S U S2
+tv-FR2-193711 1 3375 218 M S U S2
+;; cluster S5 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-FR2-193711 1 3717 1953 M S U S5
+tv-FR2-193711 1 5718 309 M S U S5

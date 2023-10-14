@@ -1,0 +1,9 @@
+;; cluster S3 [ merge HCLR 0 = S3 in S4 with 1.6889958783285848 ] [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-LCI-145713 1 1531 270 M S U S3
+tv-LCI-145713 1 2203 165 M S U S3
+tv-LCI-145713 1 2368 1224 M S U S3
+;; cluster S7 [ score:FS = -33.67597658561613 ] [ score:FT = -34.138284384103514 ] [ score:MS = -33.54945784607788 ] [ score:MT = -33.993477620451394 ] 
+tv-LCI-145713 1 3999 570 M S U S7
+tv-LCI-145713 1 4711 271 M S U S7
+;; cluster S8 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-LCI-145713 1 4982 1059 M S U S8

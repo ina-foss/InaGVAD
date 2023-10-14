@@ -1,0 +1,8 @@
+;; cluster S0 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-F24-081209 1 0 1148 M S U S0
+tv-F24-081209 1 4640 1453 M S U S0
+;; cluster S2 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-F24-081209 1 1162 762 M S U S2
+tv-F24-081209 1 2071 365 M S U S2
+tv-F24-081209 1 2436 1002 M S U S2
+tv-F24-081209 1 3438 1182 M S U S2

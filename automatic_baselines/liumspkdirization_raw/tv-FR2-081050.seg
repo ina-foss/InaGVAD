@@ -1,0 +1,10 @@
+;; cluster S0 [ score:FS = -33.35937179341707 ] [ score:FT = -34.36441926363711 ] [ score:MS = -33.72849403932819 ] [ score:MT = -34.55261795296906 ] 
+tv-FR2-081050 1 0 477 F S U S0
+tv-FR2-081050 1 498 198 F S U S0
+tv-FR2-081050 1 699 394 F S U S0
+;; cluster S2 [ score:FS = -Infinity ] [ score:FT = -Infinity ] [ score:MS = -Infinity ] [ score:MT = -Infinity ] 
+tv-FR2-081050 1 1746 984 M S U S2
+tv-FR2-081050 1 2730 1825 M S U S2
+tv-FR2-081050 1 4555 1221 M S U S2
+;; cluster S6 [ score:FS = -32.6041704899732 ] [ score:FT = -33.44915569599325 ] [ score:MS = -33.2116184951622 ] [ score:MT = -33.82285022175696 ] 
+tv-FR2-081050 1 5776 343 F S U S6
