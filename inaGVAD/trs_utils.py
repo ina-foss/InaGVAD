@@ -24,29 +24,22 @@
 # THE SOFTWARE.
 
 
+import warnings
 from xml.dom.minidom import parse
 import pandas as pd
 
 
-import html
-# import os
-# import re
-
-# from  pyannote.core import Segment, Annotation
-# from pyannote.core.notebook import Notebook
-
-# #import pylab as plt
-# from matplotlib.figure import Figure
-# import base64
-# from io import BytesIO
-
-# #from flask import url_for
-
-# from metrics import disp_vad_perf, MFmetric
+GENDER_SYMB = 'HFI'
+AGE_SYMB = 'AES'
+QUALITY_SYMB = '-*'
+DGENDER = {'H' : 'male', 'F' : 'female', 'I' : 'undefgender'}
+DAGE = {'A' : 'adult', 'E' : 'child', 'S' : 'senior'}
+DQUAL = {'-' : 'onomatopoeia', '*' : 'atypical', 'S' : 'standard'}
+NONSPEECH_LABELS = ['AP', 'BR', 'BH', 'JI', 'MU1', 'MU2', 'RE', 'RI', 'AU']
 
 
-
-def trs2df(fname):
+# Convert transcriber file to raw dataframe
+def trs2df_raw(fname):
     # convert transcriber to pandas dataframe
     doc = parse(fname)
     turn = doc.getElementsByTagName('Turn')
@@ -70,130 +63,123 @@ def trs2df(fname):
 
     lrec[-1].append(end)
     lrec.pop(0)
-    
+
     df = pd.DataFrame.from_records(lrec, columns=['start', 'label', 'stop'])
     df = df[['start', 'stop', 'label']]
     df['dur'] = df.stop - df.start
-    
+
     return df
 
+# Checking syntax
+
 def seg2str(t):
-    return html.escape('<segment début=%.3f fin=%.3f texte=%s>' % (t.start, t.stop, t.label))
+    return '<segment start=%.1f stop=%.1f label=%s>' % (t.start, t.stop, t.label)
 
-def colorize(s, color):
-    return '<p style="color:%s;">%s</p>' % (color, s)
+def unknownsymbol(symb, seg):
+    raise ValueError('unknown symbol %s in segment %s' % (symb, seg2str(seg)))
 
-def unknownsymbolmsg(symb, seg):
-    msg = '[ER] : symbole inconnu %s dans segment %s' % (symb, seg)
-    return colorize(msg, 'red')
+def check_dur(seg, dur=0.3):
+    if seg.dur <= 0:
+        raise ValueError('duration %.3f smaller or equal to 0 seconds for segment %s' % (seg.dur, seg2str(seg)))
+    elif seg.dur < dur:
+        warnings.warn('duration %.3f smaller than %.3f seconds for segment %s' % (seg.dur, dur, seg2str(seg)))
 
-def checklabel(t):    
-    
-    lerr = []
+
+def check_label(t):
     speech = False
     nonSpeech = False
-    
+
     for e in t.label.split('+'):
         if e == '':
             continue
         elif len(e) < 2 or len(e) > 3:
-            lerr.append(unknownsymbolmsg(e, seg2str(t)))
-        elif e[0] in 'HFI':
+            unknownsymbol(e, t)
+        elif e[0] in GENDER_SYMB:
             #speech
-            if (e[1] not in 'AES') or (len(e) == 3 and e[2] not in '-*'):
-                lerr.append(unknownsymbolmsg(e, seg2str(t)))
+            if (e[1] not in AGE_SYMB) or (len(e) == 3 and e[2] not in QUALITY_SYMB):
+                unknownsymbol(e, t)
             else:
                 speech = True
         else:
-            if e not in ['AP', 'BR', 'BH', 'JI', 'MU1', 'MU2', 'RE', 'RI', 'AU']:
-                lerr.append(unknownsymbolmsg(e, seg2str(t)))
+            if e not in NONSPEECH_LABELS:
+                unknownsymbol(e, t)
             else:
                 nonSpeech = True
     if speech and nonSpeech:
-        msg = '[ER] : mélange parole et non parole dans segment %s' % (seg2str(t))
-        lerr.append(colorize(msg, 'red'))
-    return lerr
+        raise ValueError('mixing speech and non speech in segment %s' % seg2str(t))
 
-def check_dur(seg, dur=0.3):
-    ret = []
-    if seg.dur <= 0:
-        msg = '[ER] durée %.3f inférieure à 0 s pour %s' % (seg.dur, seg2str(seg))
-        ret  = [colorize(msg, 'red')]
-    elif seg.dur < dur:
-        msg = '[WD] durée %.3f inférieure à %.3f s pour %s' % (seg.dur, dur, seg2str(seg))
-        ret  = [colorize(msg, 'green')]
+
+def parse_label(s):
+    if s == '':
+        return {'EMPT' : True}
+
+    ret = {}
+    if '+' in s:
+        ret['overlap'] = True
+    else:
+        ret['overlap'] = False
+
+
+    if s[0] in GENDER_SYMB:
+        ret['voice_activity'] = True
+
+        if len(s) == 2:
+            s += 'S'
+
+        for i, (key, dmap) in enumerate([('speaker_gender', DGENDER), ('speaker_age', DAGE), ('speech_quality', DQUAL)]):
+            vals = list(set([e[i] for e in s.split('+')]))
+            if len(vals) == 1:
+                ret[key] = dmap[vals[0]]
+
+    else:
+        ret = {}
+        for symb in s.split('+'):
+            ret[symb] = True
+
     return ret
 
-def cmp2last(last, cur):
-    if last is not None and last.label == cur.label:
-        msg = '[WM] même texte pour segments %s et %s' % (seg2str(last), seg2str(cur))
-        return [colorize(msg, 'blue')]
-    return []
-    
-    
 
-def parsedf(df):
-    lmsg = []
-#    error = False
+def check_df(df):
+
+    ldict = []
+
     last = None
-    
+
     for t in df.itertuples():
-        lmsg += check_dur(t)
-        lmsg += cmp2last(last, t)
-        errs = checklabel(t)
-        lmsg += errs
-#        if len(errs) != 0:
-#            error = True
+        # check duration is ok
+        check_dur(t)
+
+        # check if 2 adjacent segments have different labels
+        if last is not None and last.label == t.label:
+            warnings.warn('same label in segments  %s and %s' % (seg2str(last), seg2str(t)))
+
+        #check label syntax
+        check_label(t)
+
         last = t
-    return ''.join(lmsg)
 
-#segmenter = None
-
-# def validfname(fname):
-#     msg = colorize("MAUVAIS NOM DE FICHIER %s. L'avez-vous renommé ?" % fname, 'red')
-#     try:
-#         base, ext = os.path.splitext(fname)
-#         media, chan, tc, dur = base.split('-')
-#     except:
-#         return msg
-#     #print(ext, chan, media,tc, dur)
-#     if ext != '.trs' or (media not in ['tv', 'radio']) or len(chan) != 3 or dur != '60':
-#         return msg
-#     #print('re')
-#     if not re.match('^[0-9]{8}T[0-9]{6}$', tc):
-#         return msg
-#     return ''
+        ldict.append(parse_label(t.label))
+    return pd.DataFrame.from_dict(ldict)
 
 
-# def trs2wav(trsname, outdir):
-#     base = os.path.splitext(os.path.basename(trsname))[0]
-#     dst = '%s/%s.wav' % (outdir, base)
-#     if os.path.exists(dst):
-#         return 0
-#     url = "http://collgate.ina.fr:81/collgate.dlweb/get/%s/%s/%s/%s/?download&format=ts_audio" % tuple(base.split('-'))
-#     ret = os.system("ffmpeg -i '%s' -ar 16000 -ac 1 '%s'" % (url, dst))
-#     return ret
-    
 
-# def getiss(fname, segmenter):
 
-#     base = os.path.splitext(fname)[0]
-        
-#     dst = './iss/%s.csv' % base
-#     url = "http://collgate.ina.fr:81/collgate.dlweb/get/%s/%s/%s/%s/?download&format=ts_audio" % tuple(base.split('-'))
-        
-#     if not os.path.exists(dst):
-#         try:
-#             print('iss url', url)
-#             seg = segmenter(url)
-#             print('seg', seg)
-#             print('dst', dst)
-#             seg2csv(seg, dst)
-#             print('csvexport')
-#         except:
-#             return 'INASPEECHSEGMENTER EXCEPTION'
-        
-#     return pd.read_csv(dst, sep='\t')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #def insertimg(fname):
 #    return '<img src="{{url_for('static', filename='Hermes.png')}}" align="middle" />'
@@ -222,78 +208,7 @@ def parsedf(df):
 #     return an.support()
 
 
-# def iss2annotation(df):
-#     an = Annotation()
-#     for t in df.itertuples():
-#         an[Segment(t.start, t.stop), 'ISS'] = t.labels
-#     return an
 
-
-# def disp(annotation):#base, issdf, manualdf):
-# #    an = Annotation()
-# #    for t in issdf.itertuples():
-# #        an[Segment(t.start, t.stop), 'iss'] = t.labels
-# #    for t in issdf.itertuples():
-# #        an[Segment(t.start, t.stop), 'manual'] = t.labels
-
-#     fig = Figure(figsize = (15, 3.5))
-#     ax = fig.subplots()
-#     n = Notebook()
-#     ax = n.setup(ax=ax)
-#     n.plot_annotation(annotation, ax=ax)
-    
-#     buf = BytesIO()
-#     fig.savefig(buf, format='png')
-#     #fig.savefig(buf, format='svg')
-#     data = base64.b64encode(buf.getbuffer()).decode("ascii")
-#     #data = buf.read() #getbuffer()
-#     return f"<img src='data:image/png;base64,{data}'/>"
-#     #return f"<img src='data:image/svg+xml;utf8,{data}'/>"
-
-    
-#    fig.savefig('./plots/%s.svg' % base)
-#    return '<IMG SRC=./img/%s.svg>' % base
-
-
-#### COMMENTAIRES JEROME
-##
-## <head>
-##  <!-- load CollgateIFrameAPI -->
-## <script src="http://collgate.ina.fr/collplay.dlweb/ina/js/video.iframe.api.js" type="text/javascript"></script>
-## <script>
-    
-# window.addEventListener("load", function() {
-    
-#    let items = document.querySelectorAll("div.video-collgate");
-   
-#    items.foreach(item => {
-#        let src = item.attr("data-src");
-#        let item_id = item.id(); // attr("id");
-#         CollgateIFrameAPI.insertPlayer("#"+item_id, {
-#             src : src
-#         });
-#    });
-
-# });
-
-
-## </script>
-## </head>
-##
-## dispvid doit inserer : 
-## <div id="player-%s" class="video-collgate" data-src="http://collgate.ina.fr/collgate.dlweb/info/tv/fr2/2023-03-30T19:58:00Z/2700">
-## </div>
-##
-
-# def dispvid(fname):
-
-#     base = os.path.splitext(fname)[0]
-        
-#     url = "http://collgate.ina.fr/collgate.dlweb/get/%s/%s/%s/%s" % tuple(base.split('-'))
-#     return """<video controls width="250">
-#         <source src="%s" type="video/mp4">
-#         </video>
-#         """ % url
 
 # #### ANNOTATION METRICS
 
@@ -330,16 +245,16 @@ def parsedf(df):
 
 #     issdf = getiss(base, segmenter)
 #     print('issdf', issdf)
-    
+
 #     issannot = iss2annotation(issdf)
 #     trsannot = trsdf2annotation(df)
-    
+
 #     ret += dispvid(base)
 #     ret += disp(issannot.update(trsannot, copy=True))
 
 #     ret += disp_vad_perf(trsannot, issannot)
-    
+
 #     mfmetric = MFmetric()
 #     ret += mfmetric.to_html(trsannot, issannot)
-    
+
 #     return ret
