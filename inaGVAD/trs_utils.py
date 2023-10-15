@@ -29,12 +29,8 @@ from xml.dom.minidom import parse
 import pandas as pd
 import numpy as np
 
-
-#GENDER_SYMB = 'HFI'
-#AGE_SYMB = 'AES'
-#QUALITY_SYMB = '-*'
 DGENDER = {'H' : 'male', 'F' : 'female', 'I' : 'undefgender'}
-DAGE = {'A' : 'adult', 'E' : 'child', 'S' : 'senior'}
+DAGE = {'A' : 'adult', 'E' : 'child', 'S' : 'senior', 'I': 'undefage'}
 DQUAL = {'-' : 'onomatopoeia', '*' : 'atypical', 'S' : 'standard'}
 
 DNONSPEECH = {'AP' : 'applause',
@@ -153,21 +149,21 @@ def label2dict(s):
 
 
     if s[0] in DGENDER:
-        ret['voice_activity'] = True
+        ret['voice_activity'] = 'speech'
 
-        if len(s) == 2:
-            s += 'S'
+        s = '+'.join([e if (len(e) == 3) else (e + 'S') for e in s.split('+')])
 
-        for i, (key, dmap) in enumerate([('speaker_gender', DGENDER), ('speaker_age', DAGE), ('speech_quality', DQUAL)]):
+        for i, (key, dmap, undef) in enumerate([('speaker_gender', DGENDER, 'undefgender'), ('speaker_age', DAGE, 'undefage'), ('speech_quality', DQUAL, 'undefquality')]):
             vals = list(set([e[i] for e in s.split('+')]))
             if len(vals) == 1:
                 ret[key] = dmap[vals[0]]
+            else:
+                ret[key] = undef
 
     else:
-        ret['voice_activity'] = False
+        ret['voice_activity'] = 'nonspeech'
         for symb in s.split('+'):
-            ret[symb] = True
-
+            ret[DNONSPEECH[symb]] = True
     return ret
 
 
@@ -176,50 +172,29 @@ def trs2df(fname):
     df = parse_trs(fname)
 
     ldict = []
-
-    #last = None
+    last = None
 
     for t in df.itertuples():
         # check duration is ok
         check_dur(t)
 
         # check if 2 adjacent segments have different labels
-        if ldict and ldict[-1]['label'] == t.label:
-            warnings.warn('same label in segments  %s and %s' % (seg2str(ldict[-1]), seg2str(t)))
+        if last is not None and last.label == t.label:
+            warnings.warn('same label in segments  %s and %s' % (seg2str(last), seg2str(t)))
 
         #check label syntax
         check_label(t)
 
-#        last = t
-
+        # convert to record
         d = empty_rec.copy()
         d.update({'start' : t.start, 'stop' : t.stop, 'label' : t.label})
         d.update(label2dict(t.label))
         ldict.append(d)
+        last = t
 
     return pd.DataFrame.from_dict(ldict)[csv_cols]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#def insertimg(fname):
-#    return '<img src="{{url_for('static', filename='Hermes.png')}}" align="middle" />'
 
 
 ### CONVERSION TO PYANNOTE ANNOTATIONS
@@ -249,22 +224,6 @@ def trs2df(fname):
 
 # #### ANNOTATION METRICS
 
-# #def annot2vad(annotation):
-# #    tl = Timeline()
-
-
-# header = """
-# <!DOCTYPE html>
-# <html>
-# <header>
-# </header>
-# <body>
-# """
-
-# footer = """
-# </body>
-# </html>
-# """
 
 # def file_analysis(fname, segmenter):
 #     base = os.path.basename(fname)
