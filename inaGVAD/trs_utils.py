@@ -27,19 +27,51 @@
 import warnings
 from xml.dom.minidom import parse
 import pandas as pd
+import numpy as np
 
 
-GENDER_SYMB = 'HFI'
-AGE_SYMB = 'AES'
-QUALITY_SYMB = '-*'
+#GENDER_SYMB = 'HFI'
+#AGE_SYMB = 'AES'
+#QUALITY_SYMB = '-*'
 DGENDER = {'H' : 'male', 'F' : 'female', 'I' : 'undefgender'}
 DAGE = {'A' : 'adult', 'E' : 'child', 'S' : 'senior'}
 DQUAL = {'-' : 'onomatopoeia', '*' : 'atypical', 'S' : 'standard'}
-NONSPEECH_LABELS = ['AP', 'BR', 'BH', 'JI', 'MU1', 'MU2', 'RE', 'RI', 'AU']
+
+DNONSPEECH = {'AP' : 'applause',
+              'BR' : 'noise',
+              'BH' : 'hubbub',
+              'JI' : 'jingle',
+              'MU1' : 'fg_music',
+              'MU2' : 'bg_music',
+              'RE' : 'respiration',
+              'RI' : 'laughers',
+              'AU' : 'other',
+              'EMPT' : 'empty'}
+
+csv_cols = ['label',
+            'start',
+            'stop',
+            'voice_activity',
+            'overlap',
+            'speaker_gender',
+            'speaker_age',
+            'speech_quality',
+            'applause',
+            'noise',
+            'hubbub',
+            'jingle',
+            'fg_music',
+            'bg_music',
+            'respiration',
+            'laughers',
+            'other',
+            'empty']
+
+empty_rec = dict([(k, np.NAN) for k in csv_cols])
 
 
 # Convert transcriber file to raw dataframe
-def trs2df_raw(fname):
+def parse_trs(fname):
     # convert transcriber to pandas dataframe
     doc = parse(fname)
     turn = doc.getElementsByTagName('Turn')
@@ -94,14 +126,14 @@ def check_label(t):
             continue
         elif len(e) < 2 or len(e) > 3:
             unknownsymbol(e, t)
-        elif e[0] in GENDER_SYMB:
+        elif e[0] in DGENDER:
             #speech
-            if (e[1] not in AGE_SYMB) or (len(e) == 3 and e[2] not in QUALITY_SYMB):
+            if (e[1] not in DAGE) or (len(e) == 3 and e[2] not in DQUAL):
                 unknownsymbol(e, t)
             else:
                 speech = True
         else:
-            if e not in NONSPEECH_LABELS:
+            if e not in DNONSPEECH:
                 unknownsymbol(e, t)
             else:
                 nonSpeech = True
@@ -109,9 +141,9 @@ def check_label(t):
         raise ValueError('mixing speech and non speech in segment %s' % seg2str(t))
 
 
-def parse_label(s):
+def label2dict(s):
     if s == '':
-        return {'EMPT' : True}
+        s = 'EMPT'
 
     ret = {}
     if '+' in s:
@@ -120,7 +152,7 @@ def parse_label(s):
         ret['overlap'] = False
 
 
-    if s[0] in GENDER_SYMB:
+    if s[0] in DGENDER:
         ret['voice_activity'] = True
 
         if len(s) == 2:
@@ -132,35 +164,40 @@ def parse_label(s):
                 ret[key] = dmap[vals[0]]
 
     else:
-        ret = {}
+        ret['voice_activity'] = False
         for symb in s.split('+'):
             ret[symb] = True
 
     return ret
 
 
-def check_df(df):
+def trs2df(fname):
+
+    df = parse_trs(fname)
 
     ldict = []
 
-    last = None
+    #last = None
 
     for t in df.itertuples():
         # check duration is ok
         check_dur(t)
 
         # check if 2 adjacent segments have different labels
-        if last is not None and last.label == t.label:
-            warnings.warn('same label in segments  %s and %s' % (seg2str(last), seg2str(t)))
+        if ldict and ldict[-1]['label'] == t.label:
+            warnings.warn('same label in segments  %s and %s' % (seg2str(ldict[-1]), seg2str(t)))
 
         #check label syntax
         check_label(t)
 
-        last = t
+#        last = t
 
-        ldict.append(parse_label(t.label))
-    return pd.DataFrame.from_dict(ldict)
+        d = empty_rec.copy()
+        d.update({'start' : t.start, 'stop' : t.stop, 'label' : t.label})
+        d.update(label2dict(t.label))
+        ldict.append(d)
 
+    return pd.DataFrame.from_dict(ldict)[csv_cols]
 
 
 
