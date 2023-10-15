@@ -1,0 +1,17 @@
+label,start,stop,voice_activity,overlap,speaker_gender,speaker_age,speech_quality,applause,noise,hubbub,jingle,fg_music,bg_music,respiration,laughers,other,empty
+MU1,0.0,20.69,nonspeech,False,,,,,,,,True,,,,,
+HA-,20.69,21.465,speech,False,male,adult,onomatopoeia,,,,,,,,,,
+HA,21.465,26.726,speech,False,male,adult,standard,,,,,,,,,,
+RE,26.726,27.185,nonspeech,False,,,,,,,,,,True,,,
+HA-,27.185,27.767,speech,False,male,adult,onomatopoeia,,,,,,,,,,
+HA,27.767,29.075,speech,False,male,adult,standard,,,,,,,,,,
+HA-,29.075,29.851,speech,False,male,adult,onomatopoeia,,,,,,,,,,
+HA,29.851,30.831,speech,False,male,adult,standard,,,,,,,,,,
+RE,30.831,31.266,nonspeech,False,,,,,,,,,,True,,,
+HA,31.266,33.121,speech,False,male,adult,standard,,,,,,,,,,
+,33.121,33.66,nonspeech,False,,,,,,,,,,,,,True
+HA-,33.66,34.213,speech,False,male,adult,onomatopoeia,,,,,,,,,,
+HA,34.213,40.536,speech,False,male,adult,standard,,,,,,,,,,
+RE,40.536,40.972,nonspeech,False,,,,,,,,,,True,,,
+HA,40.972,43.828,speech,False,male,adult,standard,,,,,,,,,,
+MU1,43.828,60.203,nonspeech,False,,,,,,,,True,,,,,

@@ -1,0 +1,17 @@
+label,start,stop,voice_activity,overlap,speaker_gender,speaker_age,speech_quality,applause,noise,hubbub,jingle,fg_music,bg_music,respiration,laughers,other,empty
+HA,0.0,1.433,speech,False,male,adult,standard,,,,,,,,,,
+RE,1.433,1.86,nonspeech,False,,,,,,,,,,True,,,
+HA,1.86,5.969,speech,False,male,adult,standard,,,,,,,,,,
+,5.969,7.644,nonspeech,False,,,,,,,,,,,,,True
+MU1,7.644,11.443,nonspeech,False,,,,,,,,True,,,,,
+FA,11.443,16.667,speech,False,female,adult,standard,,,,,,,,,,
+JI,16.667,18.232,nonspeech,False,,,,,,,True,,,,,,
+HA,18.232,21.641,speech,False,male,adult,standard,,,,,,,,,,
+BR,21.641,22.163,nonspeech,False,,,,,True,,,,,,,,
+HA,22.163,26.76,speech,False,male,adult,standard,,,,,,,,,,
+FA,26.76,29.809,speech,False,female,adult,standard,,,,,,,,,,
+MU1,29.809,38.836,nonspeech,False,,,,,,,,True,,,,,
+HA,38.836,47.568,speech,False,male,adult,standard,,,,,,,,,,
+HA+FA,47.568,48.458,speech,True,undefgender,adult,standard,,,,,,,,,,
+HA,48.458,59.363,speech,False,male,adult,standard,,,,,,,,,,
+HA+FA,59.363,60.032,speech,True,undefgender,adult,standard,,,,,,,,,,

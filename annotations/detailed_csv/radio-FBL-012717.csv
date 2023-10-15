@@ -1,0 +1,4 @@
+label,start,stop,voice_activity,overlap,speaker_gender,speaker_age,speech_quality,applause,noise,hubbub,jingle,fg_music,bg_music,respiration,laughers,other,empty
+MU1,0.0,13.337,nonspeech,False,,,,,,,,True,,,,,
+JI,13.337,23.121,nonspeech,False,,,,,,,True,,,,,,
+MU1,23.121,60.011,nonspeech,False,,,,,,,,True,,,,,

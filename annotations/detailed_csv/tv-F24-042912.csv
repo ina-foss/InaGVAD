@@ -1,0 +1,16 @@
+label,start,stop,voice_activity,overlap,speaker_gender,speaker_age,speech_quality,applause,noise,hubbub,jingle,fg_music,bg_music,respiration,laughers,other,empty
+MU1,0.0,27.447,nonspeech,False,,,,,,,,True,,,,,
+HA,27.447,28.022,speech,False,male,adult,standard,,,,,,,,,,
+MU2,28.022,30.766,nonspeech,False,,,,,,,,,True,,,,
+HA,30.766,32.285,speech,False,male,adult,standard,,,,,,,,,,
+MU2,32.285,36.205,nonspeech,False,,,,,,,,,True,,,,
+HA,36.205,39.511,speech,False,male,adult,standard,,,,,,,,,,
+MU2,39.511,45.786,nonspeech,False,,,,,,,,,True,,,,
+HA,45.786,47.393,speech,False,male,adult,standard,,,,,,,,,,
+MU2,47.393,47.794,nonspeech,False,,,,,,,,,True,,,,
+HA,47.794,51.024,speech,False,male,adult,standard,,,,,,,,,,
+MU2,51.024,51.424,nonspeech,False,,,,,,,,,True,,,,
+HA,51.424,52.709,speech,False,male,adult,standard,,,,,,,,,,
+MU2,52.709,54.177,nonspeech,False,,,,,,,,,True,,,,
+,54.177,54.999,nonspeech,False,,,,,,,,,,,,,True
+JI,54.999,61.227,nonspeech,False,,,,,,,True,,,,,,
