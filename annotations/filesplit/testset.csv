@@ -1,0 +1,218 @@
+fileid,media,channel_code,channel_name,channel_category,broadcast_hour,vad_difficulty
+radio-FBL-011904,radio,FBL,France Bleu,music_radio,1,EASY
+radio-FBL-025455,radio,FBL,France Bleu,music_radio,2,MEDIUM
+radio-FBL-035452,radio,FBL,France Bleu,music_radio,3,EASY
+radio-FBL-044522,radio,FBL,France Bleu,music_radio,4,MEDIUM
+radio-FBL-051706,radio,FBL,France Bleu,music_radio,5,EASY
+radio-FBL-083109,radio,FBL,France Bleu,music_radio,8,EASY
+radio-FBL-090844,radio,FBL,France Bleu,music_radio,9,EASY
+radio-FBL-092729,radio,FBL,France Bleu,music_radio,9,MEDIUM
+radio-FBL-132313,radio,FBL,France Bleu,music_radio,13,EASY
+radio-FBL-205100,radio,FBL,France Bleu,music_radio,20,EASY
+radio-FBL-220700,radio,FBL,France Bleu,music_radio,22,EASY
+radio-FBL-234419,radio,FBL,France Bleu,music_radio,23,EASY
+radio-FCR-031913,radio,FCR,France Culture,generalist_radio,3,HARD
+radio-FCR-083707,radio,FCR,France Culture,generalist_radio,8,MEDIUM
+radio-FCR-115618,radio,FCR,France Culture,generalist_radio,11,HARD
+radio-FCR-171139,radio,FCR,France Culture,generalist_radio,17,MEDIUM
+radio-FCR-214556,radio,FCR,France Culture,generalist_radio,21,HARD
+radio-FCR-225430,radio,FCR,France Culture,generalist_radio,22,MEDIUM
+radio-FIF-033339,radio,FIF,France Info,generalist_radio,3,EASY
+radio-FIF-103502,radio,FIF,France Info,generalist_radio,10,EASY
+radio-FIF-111258,radio,FIF,France Info,generalist_radio,11,EASY
+radio-FIF-120453,radio,FIF,France Info,generalist_radio,12,EASY
+radio-FIF-121714,radio,FIF,France Info,generalist_radio,12,EASY
+radio-FIF-140426,radio,FIF,France Info,generalist_radio,14,EASY
+radio-FIF-141149,radio,FIF,France Info,generalist_radio,14,EASY
+radio-FIF-145356,radio,FIF,France Info,generalist_radio,14,EASY
+radio-FIF-180928,radio,FIF,France Info,generalist_radio,18,EASY
+radio-FIF-184016,radio,FIF,France Info,generalist_radio,18,EASY
+radio-FIF-221229,radio,FIF,France Info,generalist_radio,22,EASY
+radio-FIP-063229,radio,FIP,FIP,music_radio,6,EASY
+radio-FIP-110726,radio,FIP,FIP,music_radio,11,EASY
+radio-FIP-180932,radio,FIP,FIP,music_radio,18,HARD
+radio-FIP-232113,radio,FIP,FIP,music_radio,23,HARD
+radio-FIT-022227,radio,FIT,France Inter,generalist_radio,2,MEDIUM
+radio-FIT-041739,radio,FIT,France Inter,generalist_radio,4,EASY
+radio-FIT-130412,radio,FIT,France Inter,generalist_radio,13,EASY
+radio-FIT-141155,radio,FIT,France Inter,generalist_radio,14,EASY
+radio-FIT-142945,radio,FIT,France Inter,generalist_radio,14,EASY
+radio-FIT-193651,radio,FIT,France Inter,generalist_radio,19,MEDIUM
+radio-FMU-050837,radio,FMU,France Musique,music_radio,5,EASY
+radio-FMU-051309,radio,FMU,France Musique,music_radio,5,EASY
+radio-FMU-051454,radio,FMU,France Musique,music_radio,5,EASY
+radio-FMU-101443,radio,FMU,France Musique,music_radio,10,EASY
+radio-FMU-121018,radio,FMU,France Musique,music_radio,12,EASY
+radio-FMU-122555,radio,FMU,France Musique,music_radio,12,EASY
+radio-FMU-135816,radio,FMU,France Musique,music_radio,13,EASY
+radio-FMU-144831,radio,FMU,France Musique,music_radio,14,EASY
+radio-FMU-154738,radio,FMU,France Musique,music_radio,15,EASY
+radio-FMU-181337,radio,FMU,France Musique,music_radio,18,EASY
+radio-FMU-182133,radio,FMU,France Musique,music_radio,18,EASY
+radio-FMU-195602,radio,FMU,France Musique,music_radio,19,MEDIUM
+radio-FMU-204117,radio,FMU,France Musique,music_radio,20,EASY
+radio-FMU-224627,radio,FMU,France Musique,music_radio,22,MEDIUM
+radio-FUN-013906,radio,FUN,Fun Radio,music_radio,1,MEDIUM
+radio-FUN-162242,radio,FUN,Fun Radio,music_radio,16,HARD
+radio-MUV-013043,radio,MUV,Mouv',music_radio,1,HARD
+radio-MUV-031209,radio,MUV,Mouv',music_radio,3,HARD
+radio-MUV-061408,radio,MUV,Mouv',music_radio,6,HARD
+radio-MUV-074146,radio,MUV,Mouv',music_radio,7,HARD
+radio-MUV-090958,radio,MUV,Mouv',music_radio,9,HARD
+radio-MUV-091537,radio,MUV,Mouv',music_radio,9,HARD
+radio-MUV-101431,radio,MUV,Mouv',music_radio,10,EASY
+radio-MUV-103937,radio,MUV,Mouv',music_radio,10,MEDIUM
+radio-MUV-110303,radio,MUV,Mouv',music_radio,11,HARD
+radio-MUV-112050,radio,MUV,Mouv',music_radio,11,HARD
+radio-MUV-204427,radio,MUV,Mouv',music_radio,20,HARD
+radio-MUV-210509,radio,MUV,Mouv',music_radio,21,EASY
+radio-RMC-001824,radio,RMC,RMC,generalist_radio,0,EASY
+radio-RMC-030205,radio,RMC,RMC,generalist_radio,3,EASY
+radio-RMC-094259,radio,RMC,RMC,generalist_radio,9,EASY
+radio-RMC-114358,radio,RMC,RMC,generalist_radio,11,EASY
+radio-RMC-144937,radio,RMC,RMC,generalist_radio,14,EASY
+radio-RMC-154221,radio,RMC,RMC,generalist_radio,15,EASY
+radio-RMC-161225,radio,RMC,RMC,generalist_radio,16,EASY
+radio-RMC-191036,radio,RMC,RMC,generalist_radio,19,EASY
+radio-RMC-212532,radio,RMC,RMC,generalist_radio,21,EASY
+radio-RTL-133218,radio,RTL,RTL,generalist_radio,13,EASY
+radio-RTL-193856,radio,RTL,RTL,generalist_radio,19,MEDIUM
+radio-SKY-010856,radio,SKY,Skyrock,music_radio,1,HARD
+radio-SKY-172758,radio,SKY,Skyrock,music_radio,17,MEDIUM
+tv-ART-072411,tv,ART,Arte,generalist_tv,7,MEDIUM
+tv-ART-093525,tv,ART,Arte,generalist_tv,9,MEDIUM
+tv-ART-094118,tv,ART,Arte,generalist_tv,9,MEDIUM
+tv-ART-094745,tv,ART,Arte,generalist_tv,9,EASY
+tv-ART-104726,tv,ART,Arte,generalist_tv,10,MEDIUM
+tv-ART-183717,tv,ART,Arte,generalist_tv,18,MEDIUM
+tv-BFT-020755,tv,BFT,BFM TV,news_tv,2,MEDIUM
+tv-BFT-050719,tv,BFT,BFM TV,news_tv,5,EASY
+tv-BFT-075249,tv,BFT,BFM TV,news_tv,7,MEDIUM
+tv-BFT-161228,tv,BFT,BFM TV,news_tv,16,EASY
+tv-BFT-162139,tv,BFT,BFM TV,news_tv,16,MEDIUM
+tv-BFT-170057,tv,BFT,BFM TV,news_tv,17,EASY
+tv-BFT-183240,tv,BFT,BFM TV,news_tv,18,MEDIUM
+tv-BFT-183616,tv,BFT,BFM TV,news_tv,18,EASY
+tv-C+N-005054,tv,C+N,CNEWS,news_tv,0,EASY
+tv-C+N-023637,tv,C+N,CNEWS,news_tv,2,EASY
+tv-C+N-060402,tv,C+N,CNEWS,news_tv,6,EASY
+tv-C+N-065324,tv,C+N,CNEWS,news_tv,6,EASY
+tv-C+N-070441,tv,C+N,CNEWS,news_tv,7,EASY
+tv-C+N-071121,tv,C+N,CNEWS,news_tv,7,EASY
+tv-C+N-081613,tv,C+N,CNEWS,news_tv,8,MEDIUM
+tv-C+N-104137,tv,C+N,CNEWS,news_tv,10,MEDIUM
+tv-C+N-191413,tv,C+N,CNEWS,news_tv,19,EASY
+tv-C+N-224733,tv,C+N,CNEWS,news_tv,22,EASY
+tv-C+N-234951,tv,C+N,CNEWS,news_tv,23,EASY
+tv-C+_-083705,tv,C+_,Canal+,generalist_tv,8,MEDIUM
+tv-C+_-112835,tv,C+_,Canal+,generalist_tv,11,HARD
+tv-C+_-134103,tv,C+_,Canal+,generalist_tv,13,HARD
+tv-C+_-141814,tv,C+_,Canal+,generalist_tv,14,MEDIUM
+tv-C+_-165141,tv,C+_,Canal+,generalist_tv,16,HARD
+tv-C+_-175655,tv,C+_,Canal+,generalist_tv,17,EASY
+tv-C+_-181000,tv,C+_,Canal+,generalist_tv,18,MEDIUM
+tv-C+_-203351,tv,C+_,Canal+,generalist_tv,20,MEDIUM
+tv-C+_-204601,tv,C+_,Canal+,generalist_tv,20,MEDIUM
+tv-C+_-220437,tv,C+_,Canal+,generalist_tv,22,HARD
+tv-C25-032841,tv,C25,Chérie 25,generalist_tv,3,EASY
+tv-F24-045809,tv,F24,France 24,news_tv,4,EASY
+tv-F24-072937,tv,F24,France 24,news_tv,7,EASY
+tv-F24-080416,tv,F24,France 24,news_tv,8,MEDIUM
+tv-F24-081209,tv,F24,France 24,news_tv,8,MEDIUM
+tv-F24-101322,tv,F24,France 24,news_tv,10,MEDIUM
+tv-F24-115128,tv,F24,France 24,news_tv,11,EASY
+tv-F24-182237,tv,F24,France 24,news_tv,18,MEDIUM
+tv-F24-183254,tv,F24,France 24,news_tv,18,MEDIUM
+tv-F24-212253,tv,F24,France 24,news_tv,21,EASY
+tv-F24-234914,tv,F24,France 24,news_tv,23,MEDIUM
+tv-F24-235242,tv,F24,France 24,news_tv,23,EASY
+tv-FR2-012411,tv,FR2,France 2,generalist_tv,1,EASY
+tv-FR2-050843,tv,FR2,France 2,generalist_tv,5,MEDIUM
+tv-FR2-070013,tv,FR2,France 2,generalist_tv,7,MEDIUM
+tv-FR2-081050,tv,FR2,France 2,generalist_tv,8,MEDIUM
+tv-FR2-151739,tv,FR2,France 2,generalist_tv,15,MEDIUM
+tv-FR2-161917,tv,FR2,France 2,generalist_tv,16,EASY
+tv-FR2-190223,tv,FR2,France 2,generalist_tv,19,EASY
+tv-FR2-193711,tv,FR2,France 2,generalist_tv,19,MEDIUM
+tv-FR3-003727,tv,FR3,France 3,generalist_tv,0,HARD
+tv-FR3-045538,tv,FR3,France 3,generalist_tv,4,MEDIUM
+tv-FR3-065106,tv,FR3,France 3,generalist_tv,6,MEDIUM
+tv-FR3-124503,tv,FR3,France 3,generalist_tv,12,HARD
+tv-FR3-140145,tv,FR3,France 3,generalist_tv,14,MEDIUM
+tv-FR3-145020,tv,FR3,France 3,generalist_tv,14,MEDIUM
+tv-FR3-151256,tv,FR3,France 3,generalist_tv,15,MEDIUM
+tv-FR3-223745,tv,FR3,France 3,generalist_tv,22,EASY
+tv-FR4-001205,tv,FR4,France 4,generalist_tv,0,HARD
+tv-FR4-005308,tv,FR4,France 4,generalist_tv,0,EASY
+tv-FR4-034901,tv,FR4,France 4,generalist_tv,3,MEDIUM
+tv-FR4-034920,tv,FR4,France 4,generalist_tv,3,HARD
+tv-FR4-082425,tv,FR4,France 4,generalist_tv,8,EASY
+tv-FR4-093405,tv,FR4,France 4,generalist_tv,9,HARD
+tv-FR4-100835,tv,FR4,France 4,generalist_tv,10,EASY
+tv-FR4-101704,tv,FR4,France 4,generalist_tv,10,HARD
+tv-FR4-133239,tv,FR4,France 4,generalist_tv,13,MEDIUM
+tv-FR4-172732,tv,FR4,France 4,generalist_tv,17,HARD
+tv-FR4-183020,tv,FR4,France 4,generalist_tv,18,MEDIUM
+tv-FR4-215612,tv,FR4,France 4,generalist_tv,21,HARD
+tv-FR5-081326,tv,FR5,France 5,generalist_tv,8,MEDIUM
+tv-FR5-102414,tv,FR5,France 5,generalist_tv,10,MEDIUM
+tv-FR5-120828,tv,FR5,France 5,generalist_tv,12,MEDIUM
+tv-FR5-155103,tv,FR5,France 5,generalist_tv,15,HARD
+tv-FR5-222424,tv,FR5,France 5,generalist_tv,22,MEDIUM
+tv-GUL-154214,tv,GUL,Gulli,generalist_tv,15,HARD
+tv-LCI-022702,tv,LCI,LCI,news_tv,2,EASY
+tv-LCI-030611,tv,LCI,LCI,news_tv,3,MEDIUM
+tv-LCI-050538,tv,LCI,LCI,news_tv,5,EASY
+tv-LCI-061740,tv,LCI,LCI,news_tv,6,MEDIUM
+tv-LCI-072215,tv,LCI,LCI,news_tv,7,EASY
+tv-LCI-100827,tv,LCI,LCI,news_tv,10,EASY
+tv-LCI-142245,tv,LCI,LCI,news_tv,14,EASY
+tv-LCI-161025,tv,LCI,LCI,news_tv,16,EASY
+tv-LCI-174051,tv,LCI,LCI,news_tv,17,EASY
+tv-LCI-180921,tv,LCI,LCI,news_tv,18,EASY
+tv-LCI-200518,tv,LCI,LCI,news_tv,20,HARD
+tv-LCI-200527,tv,LCI,LCI,news_tv,20,MEDIUM
+tv-LCI-202813,tv,LCI,LCI,news_tv,20,EASY
+tv-LCI-213519,tv,LCI,LCI,news_tv,21,EASY
+tv-M6_-002520,tv,M6_,M6,generalist_tv,0,MEDIUM
+tv-M6_-075818,tv,M6_,M6,generalist_tv,7,HARD
+tv-M6_-132707,tv,M6_,M6,generalist_tv,13,MEDIUM
+tv-M6_-142753,tv,M6_,M6,generalist_tv,14,HARD
+tv-M6_-162155,tv,M6_,M6,generalist_tv,16,EASY
+tv-M6_-165521,tv,M6_,M6,generalist_tv,16,MEDIUM
+tv-M6_-173630,tv,M6_,M6,generalist_tv,17,EASY
+tv-M6_-193323,tv,M6_,M6,generalist_tv,19,MEDIUM
+tv-M6_-223613,tv,M6_,M6,generalist_tv,22,HARD
+tv-M6_-231052,tv,M6_,M6,generalist_tv,23,EASY
+tv-N12-132328,tv,N12,NRJ 12,generalist_tv,13,EASY
+tv-N12-182632,tv,N12,NRJ 12,generalist_tv,18,HARD
+tv-N12-195609,tv,N12,NRJ 12,generalist_tv,19,MEDIUM
+tv-PP_-093859,tv,PP_,Paris Première,generalist_tv,9,MEDIUM
+tv-T5M-012133,tv,T5M,TV5 Monde,generalist_tv,1,MEDIUM
+tv-T5M-040130,tv,T5M,TV5 Monde,generalist_tv,4,MEDIUM
+tv-T5M-061236,tv,T5M,TV5 Monde,generalist_tv,6,MEDIUM
+tv-T5M-072520,tv,T5M,TV5 Monde,generalist_tv,7,MEDIUM
+tv-T5M-144346,tv,T5M,TV5 Monde,generalist_tv,14,MEDIUM
+tv-T5M-210834,tv,T5M,TV5 Monde,generalist_tv,21,MEDIUM
+tv-T5M-211131,tv,T5M,TV5 Monde,generalist_tv,21,HARD
+tv-T5M-220844,tv,T5M,TV5 Monde,generalist_tv,22,MEDIUM
+tv-T5M-221506,tv,T5M,TV5 Monde,generalist_tv,22,MEDIUM
+tv-T5M-224001,tv,T5M,TV5 Monde,generalist_tv,22,EASY
+tv-T5M-230247,tv,T5M,TV5 Monde,generalist_tv,23,MEDIUM
+tv-T5M-232204,tv,T5M,TV5 Monde,generalist_tv,23,MEDIUM
+tv-T5M-235452,tv,T5M,TV5 Monde,generalist_tv,23,HARD
+tv-TF1-012319,tv,TF1,TF1,generalist_tv,1,MEDIUM
+tv-TF1-030233,tv,TF1,TF1,generalist_tv,3,HARD
+tv-TF1-083840,tv,TF1,TF1,generalist_tv,8,HARD
+tv-TF1-101331,tv,TF1,TF1,generalist_tv,10,EASY
+tv-TF1-110550,tv,TF1,TF1,generalist_tv,11,MEDIUM
+tv-TF1-131538,tv,TF1,TF1,generalist_tv,13,MEDIUM
+tv-TF1-133551,tv,TF1,TF1,generalist_tv,13,EASY
+tv-TF1-162736,tv,TF1,TF1,generalist_tv,16,MEDIUM
+tv-TF1-183922,tv,TF1,TF1,generalist_tv,18,MEDIUM
+tv-TF1-190336,tv,TF1,TF1,generalist_tv,19,HARD
+tv-TF1-194413,tv,TF1,TF1,generalist_tv,19,HARD
+tv-TF1-215118,tv,TF1,TF1,generalist_tv,21,HARD
+tv-TF1-225026,tv,TF1,TF1,generalist_tv,22,HARD
+tv-TFX-230837,tv,TFX,TFX,generalist_tv,23,HARD
+tv-TFX-231251,tv,TFX,TFX,generalist_tv,23,MEDIUM
