@@ -32,7 +32,7 @@ class WstpErr(BaseMetric):
     @classmethod
     def metric_name(cls):
         # Return human-readable name of the metric
-        return 'women speaking time percentage error'
+        return 'WSTP error'
 
     @classmethod
     def metric_components(cls):
