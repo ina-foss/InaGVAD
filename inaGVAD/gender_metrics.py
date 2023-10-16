@@ -62,8 +62,20 @@ class WstpErr(BaseMetric):
 
     def compute_metric(self, components):
         # Actually compute the metric based on the component values
-        r = components['rfemale'] / (components['rfemale'] + components['rmale'])
-        h = components['hfemale'] / (components['hfemale'] + components['hmale'])
+        tot_ref = components['rfemale'] + components['rmale']
+        tot_hyp = components['hfemale'] + components['hmale']
+
+        if tot_ref == 0 and tot_hyp == 0:
+            return 0
+
+        if tot_ref > 0:
+            r = components['rfemale'] / tot_ref
+        else:
+            r = .5
+        if tot_hyp > 0:
+            h = components['hfemale'] / tot_hyp
+        else:
+            h = .5
         return (r - h)
 
 class IdentificationErrorRateLabel(IdentificationErrorRate):
@@ -72,7 +84,6 @@ class IdentificationErrorRateLabel(IdentificationErrorRate):
         self.label = label
         self.iea  = IdentificationErrorAnalysis(**kwargs)
     def compute_components(self, reference, hypothesis, **kwargs):
-        print('compute components', self.label)
         uem = kwargs['uem']
         andiff = self.iea.difference(reference, hypothesis, uem=uem)
 
