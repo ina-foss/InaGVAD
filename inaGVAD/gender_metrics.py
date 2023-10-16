@@ -24,6 +24,9 @@
 # THE SOFTWARE.
 
 from pyannote.metrics.base import BaseMetric
+from pyannote.metrics.identification import IdentificationErrorRate
+from pyannote.metrics.errors.identification import IdentificationErrorAnalysis
+
 
 class WstpErr(BaseMetric):
     @classmethod
@@ -62,3 +65,29 @@ class WstpErr(BaseMetric):
         r = components['rfemale'] / (components['rfemale'] + components['rmale'])
         h = components['hfemale'] / (components['hfemale'] + components['hmale'])
         return (r - h)
+
+class IdentificationErrorRateLabel(IdentificationErrorRate):
+    def __init__(self, label, **kwargs):
+        super(IdentificationErrorRateLabel, self).__init__(**kwargs)
+        self.label = label
+        self.iea  = IdentificationErrorAnalysis(**kwargs)
+    def compute_components(self, reference, hypothesis, **kwargs):
+        print('compute components', self.label)
+        uem = kwargs['uem']
+        andiff = self.iea.difference(reference, hypothesis, uem=uem)
+
+        # ['total', 'correct', 'false alarm', 'missed detection', 'confusion']
+        components = self.init_components()
+        #dict([(e, 0.) for e in self.metric_components()])
+
+        for segment, _, label in andiff.itertracks(yield_label=True):
+            status, ref, hyp = label
+            dur = segment.duration
+            if status in ['correct', 'missed detection', 'confusion'] and ref == self.label:
+                components['total'] += dur
+            if status in ['correct', 'missed detection'] and ref == self.label:
+                components[status] += dur
+            elif status in ['false alarm', 'confusion'] and hyp == self.label:
+                components[status] += dur
+
+        return components
