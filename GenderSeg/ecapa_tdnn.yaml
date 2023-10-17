@@ -1,0 +1,78 @@
+# ##################################################
+# Model: Gender Speaker segmentation Baseline
+# Embeddings: Deep embedding
+# Segmentation Technique: SVM
+# Authors: Reda DEHAK 2023
+# #################################################
+
+seed: 1234
+__set_seed: !apply:torch.manual_seed [!ref <seed>]
+
+# Directories: Replace !PLACEHOLDER with full path of the directory.
+# Download data from: http://groups.inf.ed.ac.uk/ami/download/
+data_folder: #!PLACEHOLDER # e.g., /path/to/ina/
+wav_folder: !ref <data_folder>/wav
+
+# Directories: replace !PLACEHOLDER with full path of the Directory
+# of csv VAD files
+vad_folder: #!PLACEHOLDER # e.g., /path/to/inaSeg/
+segdev_folder: #!PLACEHOLDER # e.g., /path/to/inaSeg/
+
+output_folder: #!PLACEHOLDER # e.g., result/inaSeg_ecapa
+save_folder: !ref <output_folder>/save
+
+# Embedding model
+# Here, the pretrained embedding model trained with train_speaker_embeddings.py hparams/train_ecapa_tdnn.yaml
+# is downloaded from the speechbrain HuggingFace repository.
+# However, a local path pointing to a directory containing your checkpoints may also be specified
+# instead (see pretrainer below)
+
+# Will automatically download ECAPA-TDNN model (best).
+pretrain_path: speechbrain/spkrec-ecapa-voxceleb
+
+# Some more exp folders (for cleaner structure).
+embedding_dir: !ref <output_folder>/emb
+seg_dir: !ref <output_folder>/gender_Seg
+
+# Spectral feature parameters
+n_mels: 80
+# left_frames: 0
+# right_frames: 0
+# deltas: False
+
+# ECAPA-TDNN model
+emb_dim: 192
+emb_channels: [1024, 1024, 1024, 1024, 3072]
+emb_attention_channels: 128
+emb_lin_neurons: 192
+batch_size: 256
+
+dataloader_opts:
+    batch_size: !ref <batch_size>
+
+compute_features: !new:speechbrain.lobes.features.Fbank
+    n_mels: !ref <n_mels>
+
+mean_var_norm: !new:speechbrain.processing.features.InputNormalization
+    norm_type: sentence
+    std_norm: False
+
+embedding_model: !new:speechbrain.lobes.models.ECAPA_TDNN.ECAPA_TDNN
+    input_size: !ref <n_mels>
+    channels: !ref <emb_channels>
+    kernel_sizes: [5, 3, 3, 3, 1]
+    dilations: [1, 2, 3, 4, 1]
+    attention_channels: !ref <emb_attention_channels>
+    lin_neurons: !ref <emb_lin_neurons>
+
+mean_var_norm_emb: !new:speechbrain.processing.features.InputNormalization
+    norm_type: global
+    std_norm: False
+    
+pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
+    collect_in: !ref <save_folder>
+    loadables:
+        embedding_model: !ref <embedding_model>
+    paths:
+        embedding_model: !ref <pretrain_path>/embedding_model.ckpt
+
