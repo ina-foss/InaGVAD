@@ -37,7 +37,7 @@ class WstpErr(BaseMetric):
     @classmethod
     def metric_components(cls):
         # Return component names from which the metric is computed
-        return ['rmale', 'rfemale', 'hmale', 'hfemale']
+        return ['ref_male_dur', 'ref_female_dur', 'hyp_male_dur', 'hyp_female_dur']
 
     def compute_components(self, reference, hypothesis, **kwargs):
         # Actually compute the value of each component
@@ -46,34 +46,35 @@ class WstpErr(BaseMetric):
             reference = reference.crop(uem)
             hypothesis = hypothesis.crop(uem)
 
-        components = {'rmale': 0., 'rfemale': 0., 'hmale' : 0., 'hfemale' : 0}
+        components = self.init_components()
+        #components = {'rmale': 0., 'rfemale': 0., 'hmale' : 0., 'hfemale' : 0}
 
         #print(reference.crop(uem))
         for segment, _, gender in reference.itertracks(yield_label=True):
             if gender == 'undefgender':
-                components['rmale'] += .5 * segment.duration
-                components['rfemale'] += .5 * segment.duration
+                components['ref_male_dur'] += .5 * segment.duration
+                components['ref_female_dur'] += .5 * segment.duration
             else:
-                components['r' + gender] += segment.duration
+                components['ref_' + gender + '_dur'] += segment.duration
 
         for segment, _, gender in hypothesis.itertracks(yield_label=True):
-            components['h' + gender] += segment.duration
+            components['hyp_' + gender + '_dur'] += segment.duration
         return components
 
     def compute_metric(self, components):
         # Actually compute the metric based on the component values
-        tot_ref = components['rfemale'] + components['rmale']
-        tot_hyp = components['hfemale'] + components['hmale']
+        tot_ref = components['ref_female_dur'] + components['ref_male_dur']
+        tot_hyp = components['hyp_female_dur'] + components['hyp_male_dur']
 
         if tot_ref == 0 and tot_hyp == 0:
             return 0
 
         if tot_ref > 0:
-            r = components['rfemale'] / tot_ref
+            r = components['ref_female_dur'] / tot_ref
         else:
             r = .5
         if tot_hyp > 0:
-            h = components['hfemale'] / tot_hyp
+            h = components['hyp_female_dur'] / tot_hyp
         else:
             h = .5
         return (r - h)
