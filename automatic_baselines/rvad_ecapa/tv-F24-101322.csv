@@ -1,0 +1,14 @@
+label,start,stop
+male,0.0,0.01
+female,0.01,0.39
+male,0.39,0.4
+female,0.4,4.5
+male,4.5,43.05
+female,43.05,47.24
+male,47.24,47.4
+female,47.4,49.07
+male,49.07,49.14
+female,49.14,49.93
+male,49.93,49.95
+female,49.95,51.05
+male,51.05,61.4

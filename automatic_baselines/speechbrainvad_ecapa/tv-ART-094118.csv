@@ -1,0 +1,12 @@
+label,start,stop
+female,0.0,3.86
+male,3.86,10.0
+female,10.0,15.39
+male,15.39,23.92
+female,23.92,28.64
+male,28.64,34.55
+female,34.55,38.295
+male,38.295,41.66
+female,41.66,51.89
+male,51.89,52.91
+female,52.91,60.373
