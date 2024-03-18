@@ -1,4 +1,4 @@
-# davidreda
+# InaGVAD
 
 Installing dependencies:
 ```bash
