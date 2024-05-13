@@ -12,32 +12,28 @@ This corpus is freely available for research purposes and can be downloaded on [
 InaGVAD detailed description, together with a benchmark of 6 freely available VAD systems and 3 SGS systems, is provided in [a paper](#citing) presented in LREC-COLING 2024.
 
 
-inaGVAD was primarily designed to build systems able to monitor men's and women's speaking time in media (see [Doukhan18](https://doi.org/10.18146/2213-0969.2018.jethc156)).
 
-contains 277 1-minute-long annotated recordings, collected from 10 French radio and 18 TV channels categorized into 4 groups: generalist radio, music radio, news TV, and generalist TV.
-inaGVAD is partitioned into a 1h development and 3h37 test subset, allowing fair and reproducible system evaluation.
-
-A benchmark of 6 freely available VAD software nted, showing diverse abilities based on channel and non-speech event categories.
-allowing to obtain performance estimates 
-
-
-This corpus is been full described in a paper 
-
-
-
-
-
- and 
-inaGVAD is provided with Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS) annotations extended with overlap, speaker traits (gender, age, voice quality), and 10 non-speech event categories.
-
-
-
-Two existing SGS systems are evaluated on the corpus and compared against a baseline X-vector transfer learning strategy, trained on the development subset.
-Results demonstrate that our proposal, trained on a single - but diverse - hour of data, achieved competitive SGS results.
+InaGVAD contains 277 1-minute-long annotated recordings, partitioned into a 1h development and 3h37 test subset, allowing fair and reproducible system evaluation.
+Evaluation scripts provided with the corpus allow to obtain performance estimates in the same conditions as the 6 VAD and 3 SGS systems presented [in the associated paper](#citing).
+Recordings were collected from 10 French radio and 18 TV channels categorized into 4 groups associated to diverse acoustic conditions : generalist radio, music radio, news TV, and generalist TV.
 The entire inaGVAD package; including corpus, annotations, evaluation scripts, and baseline training code; is made freely accessible, fostering future advancement in the domain.
+
+
+InaGVAD provides an extended VAD and SGS annotation scheme, allowing to describe systems diverse abilities based on :
+* Speaker Traits
+** Gender : Female, Male, I Don't Know (IDK)
+** Age : Young (prepubescent), Adult, Ederly (Senior)
+** Speech Quality : standard, atypical (crying, laughing or shouted speech, ill person voice, artificially distorted voices, vocal performance, monster voice...)
+* 10 Non-Speech event categories : Applause, environmental noise, hubbub, jingle, foreground music, background music, respiration, non-intelligible laughers, other, emty
+
+
+Results demonstrate that our proposal, trained on a single - but diverse - hour of data, achieved competitive SGS results.
+
 \\ \newline \Keywords{Voice Activity Detection (VAD), Speaker Gender Segmentation, Audiovisual Speech Resource, Speaker Traits, Speech Overlap, Benchmark, X-vector, Gender Representation in the Media} 
 
 ## Statement of need
+
+inaGVAD was primarily designed to build systems able to monitor men's and women's speaking time in media (see [Doukhan18](https://doi.org/10.18146/2213-0969.2018.jethc156)).
 
 * Speech corpora designed for ASR (ESTER, REPERE) tend to favor the quantity of lexical terms to the accurate timing of non-speech events. Their programs are mostly composed of news ore debates, excluding documentaries, movies, cartoons, musical programs and advertisments.
 * Speech resources suited to VAD (AVA-Speech, DI-HARD 2, RATS, LibriParty) do provide more accurate timings but lacks speaker traits (gender, age), speech quality (timbre, ellocution) and non-speech event annotation.
