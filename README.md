@@ -9,7 +9,7 @@ Stay in touch!
 ## About
 InaGVAD is an annotated audiovisual corpus designed for Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS), aimed at representing the acoustic diversity of French TV and Radio programs.
 This corpus is freely available for research purposes and can be downloaded on [French National Institute of Audivisual website](https://www.ina.fr/institut-national-audiovisuel/research/dataset-project).
-InaGVAD detailed description is provided in [a paper](#citing) presented in LREC 2024.
+InaGVAD detailed description is provided in [a paper](#citing) presented in LREC-COLING 2024.
 
 
 inaGVAD contains 277 1-minute-long annotated recordings, collected from 10 French radio and 18 TV channels categorized into 4 groups: generalist radio, music radio, news TV, and generalist TV.
@@ -37,10 +37,9 @@ The entire inaGVAD package; including corpus, annotations, evaluation scripts, a
 
 ## Statement of need
 
-Speech corpora designed for ASR (ESTER, REPERE) tend to favor the quantity of lexical terms to the accurate timing of non-speech events.
-Their programs are mostly composed of news ore debates, excluding documentaries, movies, cartoons, musical programs and advertisments.
-Speech resources suited to VAD (AVA-Speech, DI-HARD 2, RATS, LibriParty) do provide more accurate timings but lacks speaker traits (gender, age), speech quality (timbre, ellocution) and non-speech event annotation.
-Speaker recognition corpora provide isolated speaker segments not allowing to evaluate speaker changes, and are generally obtained from interviews using automatic methods (diarization, VAD, active speaker detection) discarding atypical vocal performances or noise conditions (Voxceleb, INA speaker dictionnary, INA diachronic speaker dicionnary).
+* Speech corpora designed for ASR (ESTER, REPERE) tend to favor the quantity of lexical terms to the accurate timing of non-speech events. Their programs are mostly composed of news ore debates, excluding documentaries, movies, cartoons, musical programs and advertisments.
+* Speech resources suited to VAD (AVA-Speech, DI-HARD 2, RATS, LibriParty) do provide more accurate timings but lacks speaker traits (gender, age), speech quality (timbre, ellocution) and non-speech event annotation.
+* Speaker recognition corpora provide isolated speaker segments not allowing to evaluate speaker changes, and are generally obtained from interviews using automatic methods (diarization, VAD, active speaker detection) discarding atypical vocal performances or noise conditions (Voxceleb, INA speaker dictionnary, INA diachronic speaker dicionnary).
 
 InaGVAD is aimed at closing the gap between ASR, VAD and speaker corpora and provides :
 * fine-grained time-coded speech and non-speech events annotations
