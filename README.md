@@ -8,13 +8,14 @@ Stay in touch!
 
 ## About
 InaGVAD is an annotated audiovisual corpus designed for Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS), aimed at representing the acoustic diversity of French TV and Radio programs.
-This challenging corpus is freely available for research purposes and can be downloaded on [French National Institute of Audivisual website](https://www.ina.fr/institut-national-audiovisuel/research/dataset-project).
+This corpus is freely available for research purposes and can be downloaded on [French National Institute of Audivisual website](https://www.ina.fr/institut-national-audiovisuel/research/dataset-project).
 InaGVAD detailed description is provided in [a paper](#citing) presented in LREC 2024.
 
 
 inaGVAD contains 277 1-minute-long annotated recordings, collected from 10 French radio and 18 TV channels categorized into 4 groups: generalist radio, music radio, news TV, and generalist TV.
-It is partitioned into a 1h development and 3h37 test subset and provided with evaluation scripts.
+inaGVAD is partitioned into a 1h development and 3h37 test subset, allowing fair and reproducible system evaluation.
 
+A benchmark of 6 freely available VAD software nted, showing diverse abilities based on channel and non-speech event categories.
 allowing to obtain performance estimates 
 
 
@@ -27,8 +28,8 @@ This corpus is been full described in a paper
  and was primarily designed to build systems able to monitor men's and women's speaking time in media.
 inaGVAD is provided with Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS) annotations extended with overlap, speaker traits (gender, age, voice quality), and 10 non-speech event categories.
 
-This dataset is partitioned into a 1h development and a 3h37 test subset, allowing fair and reproducible system evaluation.
-A benchmark of 6 freely available VAD software is presented, showing diverse abilities based on channel and non-speech event categories.
+
+
 Two existing SGS systems are evaluated on the corpus and compared against a baseline X-vector transfer learning strategy, trained on the development subset.
 Results demonstrate that our proposal, trained on a single - but diverse - hour of data, achieved competitive SGS results.
 The entire inaGVAD package; including corpus, annotations, evaluation scripts, and baseline training code; is made freely accessible, fostering future advancement in the domain.
@@ -48,6 +49,11 @@ InaGVAD is aimed at closing the gap between ASR, VAD and speaker corpora and pro
 * freely available corpus and evaluation code allowing to train and evaluate models
 
 A Voice Activity Detection benchmark based on 6 open-source systems (inaSpeechSegmenter, LIUM_SpkDiarization, Pyannote, Rvad, Silero, SpeechBrain) show InaGVAD generalist TV and music radio categories are more challenging that estimates obtained on AMI, VoxConverse and DIHARD 3 VAD corpora.
+
+## Downloading Audio files
+
+Downloading inaGVAD audio files requires to fill accept its genral term and conditions of use (GCU) and to fill the form available on https://www.ina.fr/institut-national-audiovisuel/research/dataset-project
+
 
 ## Installation
 
