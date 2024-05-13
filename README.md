@@ -24,7 +24,7 @@ InaGVAD provides an extended VAD and SGS annotation scheme, allowing to describe
   * 3 Genders : Female, Male, I Don't Know (IDK)
   * 3 Age groups : Young (prepubescent), Adult, Ederly (Senior)
   * 3 Speech Qualities : standard, interjections (ah, oh, eg, aie), atypical (crying, laughing or shouted speech, ill person voice, artificially distorted voices, vocal performance, monster voice...)
-* 10 Non-Speech event categories : Applause, environmental noise, hubbub, jingle, foreground music, background music, respiration, non-intelligible laughers, other, emty
+* 10 Non-Speech event categories : Applause, environmental noise, hubbub, jingle, foreground music, background music, respiration, non-intelligible laughers, other, empty
 
 
 The entire inaGVAD package; including corpus, annotations, evaluation scripts, and baseline training code; is made freely accessible, fostering future advancement in the domain.
@@ -35,9 +35,10 @@ The entire inaGVAD package; including corpus, annotations, evaluation scripts, a
 
 ## Statement of need
 
-inaGVAD was primarily designed to build systems able to monitor men's and women's speaking time in media (see [Doukhan18](https://doi.org/10.18146/2213-0969.2018.jethc156)).
+Over the past few years, a growing amount of digital humanity studies, as well as French audiovisual regulation authorities reports, have used automatic Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS) for estimating women's and men's speaking time in massive amounts of audiovisual media ([Dou18](https://doi.org/10.18146/2213-0969.2018.jethc156), [ARC24](https://www.arcom.fr/sites/default/files/2024-03/Arcom%20-%20Rapport%20repr%C3%A9sentation%20femmes%202023.pdf)).
+If these studies are associated to high social impact and mediatic coverage, the lack of appropriate annotated speech resources makes it difficult to estimate the reliability of SGS systems on the diversity of audiovisual materials.
 
-* Speech corpora designed for ASR (ESTER, REPERE) tend to favor the quantity of lexical terms to the accurate timing of non-speech events. Their programs are mostly composed of news ore debates, excluding documentaries, movies, cartoons, musical programs and advertisments.
+* Speech corpora designed for ASR (ESTER, REPERE) tend to favor the quantity of lexical terms to the accurate timing of non-speech events. Their programs are mostly composed of news or debates, excluding documentaries, movies, cartoons, musical programs and advertisments.
 * Speech resources suited to VAD (AVA-Speech, DI-HARD 2, RATS, LibriParty) do provide more accurate timings but lacks speaker traits (gender, age), speech quality (timbre, ellocution) and non-speech event annotation.
 * Speaker recognition corpora provide isolated speaker segments not allowing to evaluate speaker changes, and are generally obtained from interviews using automatic methods (diarization, VAD, active speaker detection) discarding atypical vocal performances or noise conditions (Voxceleb, INA speaker dictionnary, INA diachronic speaker dicionnary).
 
@@ -48,7 +49,7 @@ InaGVAD is aimed at closing the gap between ASR, VAD and speaker corpora and pro
 * freely available corpus and evaluation code allowing to train and evaluate models
 
 A Voice Activity Detection benchmark based on 6 open-source systems (inaSpeechSegmenter, LIUM_SpkDiarization, Pyannote, Rvad, Silero, SpeechBrain) show InaGVAD generalist TV and music radio categories are more challenging than estimates obtained on AMI, VoxConverse and DIHARD 3 VAD corpora.
-Results demonstrate that our proposal, trained on a single - but diverse - hour of data, achieved competitive SGS results.
+A baseline X-vector transfer learning strategy, trained on inaGVAD 1h development set, show that models trained on a single - but diverse - hour of data can achieve competitive SGS results.
 
 
 ## Downloading Audio files
