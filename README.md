@@ -14,9 +14,9 @@ InaGVAD detailed description, together with a benchmark of 6 freely available VA
 
 
 InaGVAD contains 277 1-minute-long annotated recordings, partitioned into a 1h development and 3h37 test subset, allowing fair and reproducible system evaluation.
-Evaluation scripts provided with the corpus allow to obtain performance estimates in the same conditions as the 6 VAD and 3 SGS systems presented [in the associated paper](#citing).
+Evaluation scripts provided with the corpus provide performance estimates in the same conditions as the 6 VAD and 3 SGS systems presented [in the associated paper](#citing).
 Recordings were collected from 10 French radio and 18 TV channels categorized into 4 groups associated to diverse acoustic conditions : generalist radio, music radio, news TV, and generalist TV.
-The entire inaGVAD package; including corpus, annotations, evaluation scripts, and baseline training code; is made freely accessible, fostering future advancement in the domain.
+
 
 
 InaGVAD provides an extended VAD and SGS annotation scheme, allowing to describe systems diverse abilities based on :
@@ -27,9 +27,11 @@ InaGVAD provides an extended VAD and SGS annotation scheme, allowing to describe
 * 10 Non-Speech event categories : Applause, environmental noise, hubbub, jingle, foreground music, background music, respiration, non-intelligible laughers, other, emty
 
 
-Results demonstrate that our proposal, trained on a single - but diverse - hour of data, achieved competitive SGS results.
+The entire inaGVAD package; including corpus, annotations, evaluation scripts, and baseline training code; is made freely accessible, fostering future advancement in the domain.
 
-\\ \newline \Keywords{Voice Activity Detection (VAD), Speaker Gender Segmentation, Audiovisual Speech Resource, Speaker Traits, Speech Overlap, Benchmark, X-vector, Gender Representation in the Media} 
+
+
+[comment]: <> (Keywords, Voice Activity Detection, Speaker Gender Segmentation, Audiovisual Speech Resource, Speaker Traits, Speech Overlap, Benchmark, X-vector, Gender Representation in the Media)
 
 ## Statement of need
 
@@ -46,6 +48,8 @@ InaGVAD is aimed at closing the gap between ASR, VAD and speaker corpora and pro
 * freely available corpus and evaluation code allowing to train and evaluate models
 
 A Voice Activity Detection benchmark based on 6 open-source systems (inaSpeechSegmenter, LIUM_SpkDiarization, Pyannote, Rvad, Silero, SpeechBrain) show InaGVAD generalist TV and music radio categories are more challenging than estimates obtained on AMI, VoxConverse and DIHARD 3 VAD corpora.
+Results demonstrate that our proposal, trained on a single - but diverse - hour of data, achieved competitive SGS results.
+
 
 ## Downloading Audio files
 
