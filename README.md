@@ -9,10 +9,12 @@ Stay in touch!
 ## About
 InaGVAD is an annotated audiovisual corpus designed for Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS), aimed at representing the acoustic diversity of French TV and Radio programs.
 This corpus is freely available for research purposes and can be downloaded on [French National Institute of Audivisual website](https://www.ina.fr/institut-national-audiovisuel/research/dataset-project).
-InaGVAD detailed description is provided in [a paper](#citing) presented in LREC-COLING 2024.
+InaGVAD detailed description, together with a benchmark of 6 freely available VAD systems and 3 SGS systems, is provided in [a paper](#citing) presented in LREC-COLING 2024.
 
 
-inaGVAD contains 277 1-minute-long annotated recordings, collected from 10 French radio and 18 TV channels categorized into 4 groups: generalist radio, music radio, news TV, and generalist TV.
+inaGVAD was primarily designed to build systems able to monitor men's and women's speaking time in media (see [Doukhan18](https://doi.org/10.18146/2213-0969.2018.jethc156)).
+
+contains 277 1-minute-long annotated recordings, collected from 10 French radio and 18 TV channels categorized into 4 groups: generalist radio, music radio, news TV, and generalist TV.
 inaGVAD is partitioned into a 1h development and 3h37 test subset, allowing fair and reproducible system evaluation.
 
 A benchmark of 6 freely available VAD software nted, showing diverse abilities based on channel and non-speech event categories.
@@ -25,7 +27,7 @@ This corpus is been full described in a paper
 
 
 
- and was primarily designed to build systems able to monitor men's and women's speaking time in media.
+ and 
 inaGVAD is provided with Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS) annotations extended with overlap, speaker traits (gender, age, voice quality), and 10 non-speech event categories.
 
 
@@ -47,7 +49,7 @@ InaGVAD is aimed at closing the gap between ASR, VAD and speaker corpora and pro
 * materials representing the diversity of contents that can be found in French TV and radio
 * freely available corpus and evaluation code allowing to train and evaluate models
 
-A Voice Activity Detection benchmark based on 6 open-source systems (inaSpeechSegmenter, LIUM_SpkDiarization, Pyannote, Rvad, Silero, SpeechBrain) show InaGVAD generalist TV and music radio categories are more challenging that estimates obtained on AMI, VoxConverse and DIHARD 3 VAD corpora.
+A Voice Activity Detection benchmark based on 6 open-source systems (inaSpeechSegmenter, LIUM_SpkDiarization, Pyannote, Rvad, Silero, SpeechBrain) show InaGVAD generalist TV and music radio categories are more challenging than estimates obtained on AMI, VoxConverse and DIHARD 3 VAD corpora.
 
 ## Downloading Audio files
 
