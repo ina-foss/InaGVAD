@@ -20,10 +20,10 @@ The entire inaGVAD package; including corpus, annotations, evaluation scripts, a
 
 
 InaGVAD provides an extended VAD and SGS annotation scheme, allowing to describe systems diverse abilities based on :
-* Speaker Traits
-** Gender : Female, Male, I Don't Know (IDK)
-** Age : Young (prepubescent), Adult, Ederly (Senior)
-** Speech Quality : standard, atypical (crying, laughing or shouted speech, ill person voice, artificially distorted voices, vocal performance, monster voice...)
+* Speaker Traits categories
+  * 3 Genders : Female, Male, I Don't Know (IDK)
+  * 3 Age groups : Young (prepubescent), Adult, Ederly (Senior)
+  * 3 Speech Qualities : standard, interjections (ah, oh, eg, aie), atypical (crying, laughing or shouted speech, ill person voice, artificially distorted voices, vocal performance, monster voice...)
 * 10 Non-Speech event categories : Applause, environmental noise, hubbub, jingle, foreground music, background music, respiration, non-intelligible laughers, other, emty
 
 
