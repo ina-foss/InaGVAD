@@ -1,0 +1,143 @@
+## General Terms and Conditions of Use (GCU)
+Last update : 01/02/2024
+
+The Corpus is made available by INA under the conditions set out in the General Terms and Conditions of Use (GCU), to any legal entity that has previously accepted the entirety of the said GCU (hereinafter referred to as the «User»). Only research laboratories, innovative SMEs and all other legal entities with a scientific research service or activity are authorized to register.
+
+## How to access the FTP server and the Corpus
+The access to the FTP Server and the Corpus is subordinated to the User’s subscription Your request will be sent to INA for review, using the contact form. Following the reception of the contact form and provided that User respects, all necessary, conditions to access the Server FTP, INA will approve the registration. Once your request has been validated, the User will receive a confirmation e-mail containing the details of the FTP server and the confidential login and password allocated by INA to, enabling the User to access the FTP Server.
+
+### By requesting access to the Corpus :
+* You warrant that you have the necessary authorizations and powers to accept the GCU
+* You undertake to notify Ina (dataset (at) ina.fr) of any change that may occur in the identification of the User and/or his/her representative.
+* You agree unconditionally to abide by the current Terms of Use.
+
+The only people authorized to access the Corpus are physical individuals working under the User's control, authority and responsibility as part of scientific research (“Authorized Persons”).
+
+The User undertakes and ensures that the login name and password providing access to the FTP Server area only communicated to Authorized Persons and remain strictly confidential.
+
+The server allows Users and their Authorized Persons to access and use the Corpus in accordance with the terms described hereinafter. Any use of the Corpus under conditions that violate the GCU will be liable to prosecution for counterfeiting.
+
+## Using the Corpus
+The Corpus is made available by INA to the User free of charge, non-exclusively, and is non-transferable, strictly for scientific research purposes.
+
+Strictly as part of scientific research, only Authorised Persons may for a period of two years:
+
+* Copy the Corpus onto secure servers, under the User's strict responsibility and dedicated to the User's scientific research. Copies on servers not administered by the User (particularly Cloud servers) are prohibited.
+* Experiment/evaluate/test research and analysis tools for multimedia content.
+* Provide scientific demonstrations to third parties of Research Results incorporating all or part of the Corpus, only in the context of conferences and scientific events relating to the analysis of multimedia content (excluding any public online communication of all or part of the Corpus).
+* Provide scientific demonstrations of prototypes from all or part of the Corpus, only in the context of conferences and scientific events relating to the analysis of multimedia content (excluding any public online communication of all or part of the Corpus).
+
+Any use of the Corpus for other purposes or under other conditions must first be granted prior written permission from INA. In particular, the User and Authorised Persons undertake:
+
+* Not to grant sub-licences, sell, distribute, transfer, assign, lend, rent, distribute, communicate or make available to unauthorised persons all or part of the Corpus, in any way whatsoever.
+* Not to modify nor create works derived on the basis of or from the Corpus.
+* Not to use the Corpus for illegal or illicit purposes.
+* Not to make the Corpus accessible to unauthorised persons.
+* Not to use all or part of the Corpus for commercial purposes, and particularly not to use the Corpus in a marketable product.
+
+The User undertakes and ensures that Persons authorised to use the Corpus accept and comply with the stipulations of these Conditions of Use.
+
+The User shall ensure that all Authorised Persons no longer under their responsibility immediately ceases to access the Corpus and to use it.
+
+## Results and Publications
+Research Publications and Results including elements of the Corpus (such as images or extracts from leaflets) may not be disclosed without prior written authorisation from INA.
+
+The User undertakes to inform INA of any scientific Publications relating to the research work conducted from the Corpus.
+
+The User undertakes to make Results generated from the Corpus available to INA, under the following conditions:
+
+These Results will be sent to the following address dataset@ina.fr
+
+The User supplying these Results authorises:
+
+* Them to be stored on the FTP Server, attached to the Corpus;
+* Their access and use by all Authorised Persons strictly for scientific research purposes, under the same conditions as those for the Corpus as specified in these Conditions of Use.
+
+## Personal Data
+
+### Creating and managing access to the FTP Server
+The creation and the management of access to the FTP Server is handled by the INA under the following conditions:
+
+Purpose, legal basis et category of data processed: According to the GCU, the creation of User’s access allows access to the FTP Server.
+
+In the context of the creation of User’s access, INA processes data relating to your civil status and your login data (IP address, logs, etc.)
+
+The legal basis for this processing is the contract’s execution, the creation of User’s access is being subject to the accordance of the CGU.
+
+Categories of the collected data are : email address, login data (IP address, logs, etc.), identity related data (name, surname) and the professional life (occupation).
+
+Mandatory data collection : Collected data are strictly necessary and if all the above data is not provided, the request to create a User access will not be processed.
+
+People concerned: The treatment concerned Users of the FTP Server.
+
+Data recipient : Data are intended for the Research Department of INA.
+
+Transfer of data outside of European Union: No data’s transfer outside of the EU is realized.
+
+Data retention period : Data are retained for the entire duration of the contractual relationship, then they are archived for a period corresponding to the duration of the legal requirements.
+
+### Processing of Personal Data include in the Corpus
+Any reuse of the Personal Data includes in the Corpus made available by the INA established a Processing of Personal Data as defined by the European Regulation (EU) 2016/676 of the European Parliament and the Counsel of April 27th, 2016, named The General Data Protection Regulation (the “GDPR”) and the law n° 78-17 of January 6th, 1978 relating to the Database and Privacy Law modified, hereinafter, together, the “Data Protection Regulations”. The user is subject to the legal framework of Data Protection arising from the Data Protection arising from the Data protection Regulation, so that the use of personal data is legal. INA declines all responsibilities in the event of non-compliance by a user with the above regulations.
+
+### Exercice of Right
+In accordance with and within the limits of the regulations of by the European Regulation (EU) 2016/676 and the law n° 78-17 of January 6th, 1978, relating to the Database and Privacy Law, the User has a Right of access, right to request the rectification, the right to request the erasure, limitation and the right to the data’s’ portability and the right to determine the instructions of their data after death. The User can exercise his rights by e-mail at the following address dpdina (at) ina.fr or by postal courier to the attention of the Data Protection Officer, Legal Department, The French National Audiovisual Institute at 4 Avenue de l’Europe 94366 Bry-sur-Marne Cedex, accompanied by a copy of an identity document. The User has the right to file a claim at the French data protection authority: CNIL.
+
+## Duration
+### Period of Access and Use of the Corpus
+The Corpus may be used under the User's responsibility for a period of two (2) years after INA has sent the User their login name and password (based on the date the e-mail was sent).
+
+At the end of this period or early termination, the User undertakes to:
+
+* Cease all use of the Corpus and its copies.
+* Erase the Corpus and all its copies or have them erased.
+
+### Early termination
+INA will be able to end, without indemnity or notice, to the access and utilization of Corpus before the end of above-mentioned periods for the following cases :
+
+* In case of non-compliance of GCU by the User and/or Authorized Persons,
+* In case of claim by the beneficiary of the Corpus
+* In case of sale, merger, acquisition of the User’s structure
+* In case of cessation of Research’s’ activities
+
+## Reserved rights
+The Corpus is protected by the law and particularly by the provisions of the French Intellectual Property Code.
+
+All rights over the Corpus are therefore strictly reserved.
+
+The User and Authorised Persons acquire no intellectual property rights over the Corpus and its composite parts.
+
+The User undertakes and ensures that they are not used under conditions other than those expressly permitted by these Conditions of Use.
+
+## Mention of INA
+Any use of the Corpus, Research Results generated from the Corpus, as well as any Publication, authorised under conditions specified in Conditions of Use, must always mention the origin of the Corpus, making reference to INA.
+
+## User Liability
+The connection to the FTP Server and its use are entirely at the User's responsibility and at their sole risk.
+
+The User acknowledges and accepts the specifications, technical performance, limits and risks of the Internet network.
+
+The User is responsible for taking all appropriate measures to protect their own data and/or software and/or hardware against all harm, hijacking, pirating, virus, malevolent or intrusive programs.
+
+The User is solely responsible for the use made of the FTP Server and/or the Corpus and misuse made from or through the FTP Server and/or Corpus, particularly their illicit, non-compliant and/or unauthorized use. The User guarantees INA against any recourse or action taken by any third party in this respect.
+
+## Limit of INA's liability
+INA does not guarantee the FTP Server will be regularly accessible. Access to the FTP Server may be interrupted by INA at any time, for maintenance or through force majeure; INA declines any liability in this respect.
+
+It is understood that the Corpus is supplied 'as is', as acknowledged and accepted by User.
+
+INA does not guarantee the accuracy, precision or completeness of documents made available in the Corpus. As a result, INA declines any liability for any inaccuracy, lack of precision or omission relating to these documents.
+
+In general, INA cannot be held liable for any direct or indirect loss that could result from:
+
+* The connection, an interruption or malfunction whether of the FTP Server and/or arising from the use or inability to use the FTP Server.
+* the use of the Corpus by the User and Authorised Persons.
+
+## Amendment of the Conditions of Use
+INA reserves the right to amend the Conditions of Use at any time and without notice, particularly in order to take account of any legal, regulatory, editorial and/or technical change.
+
+Amendments to the Conditions of Use will take effect and will apply to the User as soon as they are published on the FTP Server.
+
+The date of the last update will be indicated at the top of the document.
+
+## Applicable law
+These Conditions of Use are subject to French law. Any dispute regarding the application, interpretation or execution of these Conditions of Use will be subject to the legally competent French jurisdictions.
