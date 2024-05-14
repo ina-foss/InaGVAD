@@ -84,3 +84,7 @@ booktitle={Joint International Conference on Computational Linguistics, Language
 year={2024},
 }
 ```
+
+## CREDITS
+Audiovisual archives were provided with the support of French National Audiovisual Institute (INA).
+This work has been partially funded by the French National Research Agency (project GEM : Gender Equality Monitor : ANR-19-CE38-0012).
