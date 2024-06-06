@@ -1,13 +1,7 @@
 # InaGVAD : a Challenging French TV and Radio Corpus annotated for Speech Activity Detection and Speaker Gender Segmentation
 
-## To be released soon
-
-This corpus will be released on May 20th 2024.
-Stay in touch!
-
-
 ## About
-InaGVAD is an annotated audiovisual corpus designed for Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS), aimed at representing the acoustic diversity of French TV and Radio programs.
+InaGVAD is a Voice Activity Detection (VAD) and Speaker Gender Segmentation (SGS) dataset designed for representing the acoustic diversity of French TV and Radio programs.
 This corpus is freely available for research purposes and can be downloaded on [French National Institute of Audivisual website](https://www.ina.fr/institut-national-audiovisuel/research/dataset-project).
 InaGVAD detailed description, together with a benchmark of 6 freely available VAD systems and 3 SGS systems, is provided in [a paper](#citing) presented in LREC-COLING 2024.
 
