@@ -67,16 +67,26 @@ pip install .
 
 ## Citing
 
-inaGVAD has been fully described in a paper accepted to LREC-COLING 2024 to be published on May 20th 2024 at LREC-COLING.
+inaGVAD has been fully described in [a paper](https://aclanthology.org/2024.lrec-main.785) presented at LREC-COLING 2024.
 If using this corpus in your research, please cite the following study.
 
 ```
 @inproceedings{inagvad2024,
-title={InaGVAD : a Challenging French TV and Radio Corpus annotated for Speech Activity Detection and Speaker Gender Segmentation},
-author={David Doukhan and Christine Maertens and William {Le Personnic} and Ludovic Speroni and Reda Dehak},
-booktitle={Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)},
-year={2024},
+    title = "{I}na{GVAD} : A Challenging {F}rench {TV} and Radio Corpus Annotated for Speech Activity Detection and Speaker Gender Segmentation",
+    author = "Doukhan, David  and
+      Maertens, Christine  and
+      Le Personnic, William  and
+      Speroni, Ludovic  and
+      Dehak, Reda",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.785",
+    pages = "8963--8974"
 }
+
 ```
 
 ## CREDITS
