@@ -68,9 +68,9 @@ vad.evaluation(reference_path, predictions_path, eval_set, eval_type)
 
 with :
 * `reference_path` : path to inaGVAD github repository local copy (ex: './')
-* `destination_path' : directortory containing VAD predictions in csv (severals examples can be found in ./automatic_baselines/*_vad
+* `destination_path` : directortory containing VAD predictions in csv (severals examples can be found in ./automatic_baselines/*_vad
 * `eval_set` : use `dev` or `test` for chosing the evaluation set
-* eval_type : use 'global' for obtaining results similar to table 9, 'channel_type' to table 7
+* `eval_type` : use `global` for obtaining results similar to table 9, `channel_type` to table 7
 
 The function returns 2 arguments :
 * 1st argument is the detailed result per file
