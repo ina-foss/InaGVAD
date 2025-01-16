@@ -23,6 +23,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+import os
 import glob
 import pandas as pd
 from os.path import splitext, basename
@@ -47,7 +48,7 @@ def annot2vad(annot):
     return tl.support().to_annotation()
 
 class VadEval:
-    def __init__(self, collar):
+    def __init__(self, collar=0.3):
         self.da = DetectionAccuracy(collar=collar)
         self.dprf = DetectionPrecisionRecallFMeasure(collar=collar)
 
@@ -93,14 +94,14 @@ class VadEval:
         lpred = ['%s/%s' % (pred_dir, basename(ref)) for ref in lref]
         return self.compare_lfiles(lref, lpred, reset=reset)
     
-    def compare_category(self, pred_dir, criterion, csvfname='./VAD_results_extended.csv'):
+    def compare_category(self, ref_dir, pred_dir, criterion, csvfname):
 
         df = pd.read_csv(csvfname)
         lret = []
         ldf = []
         
         for k, sdf in df.groupby(criterion):
-            src = sdf.fileid.map(lambda x: './annotations/vad/%s.csv' % x)
+            src = sdf.fileid.map(lambda x: '%s/annotations/vad/%s.csv' % (ref_dir, x))
             dst = sdf.fileid.map(lambda x: '%s/%s.csv' % (pred_dir, x))
             dfdetail, dret = self.compare_lfiles(src, dst)
             d = {'category': k}
@@ -111,11 +112,26 @@ class VadEval:
             self.reset()
         return pd.concat(ldf), pd.DataFrame.from_dict(lret)
 
-    def compare_csvset(self, pred_dir, csvfname='./VAD_results_extended.csv'):
+    def compare_csvset(self, ref_dir, pred_dir, csvfname):
 
         df = pd.read_csv(csvfname)
-        src = df.fileid.map(lambda x: './annotations/vad/%s.csv' % x)
+        src = df.fileid.map(lambda x: '%s/annotations/vad/%s.csv' % (ref_dir, x))
         dst = df.fileid.map(lambda x: '%s/%s.csv' % (pred_dir, x))
         dfdetail, dret = self.compare_lfiles(src, dst)
         self.reset()
         return dfdetail, dret
+
+    def evaluation(self, reference_path, predictions_path, eval_set, eval_type):
+        if eval_set in ['dev', 'test']:
+            csvfname = '%s/annotations/filesplit/%sset.csv' % (reference_path, eval_set)
+        else:
+            raise Exception('eval_set argument must be "dev" or "test" for evaluating on development or test set')
+        assert os.path.exists(csvfname), '%s is a bad annotation reference_path : should be of the form <inaGVAD git repos path>' % reference_path
+
+        assert eval_type in ['global', 'channel_type', 'detailed_false_alarms'], '"%s" is not a valid eval_type argument : should be "global", "channel_type", "detailed_false_alarms"' % eval_type
+        if eval_type == 'global':
+            return self.compare_csvset(reference_path , predictions_path, csvfname)
+        elif eval_type == 'channel_type':
+            return self.compare_category(reference_path, predictions_path, 'channel_category', csvfname)
+        else:
+            raise NotImplementedError('')
