@@ -1,4 +1,64 @@
 fileid,media,channel_code,channel_name,channel_category,broadcast_hour
+radio-FBL-012717,radio,FBL,France Bleu,music_radio,1
+radio-FBL-105429,radio,FBL,France Bleu,music_radio,10
+radio-FBL-150454,radio,FBL,France Bleu,music_radio,15
+radio-FBL-174018,radio,FBL,France Bleu,music_radio,17
+radio-FBL-220712,radio,FBL,France Bleu,music_radio,22
+radio-FCR-032010,radio,FCR,France Culture,generalist_radio,3
+radio-FCR-074934,radio,FCR,France Culture,generalist_radio,7
+radio-FCR-102514,radio,FCR,France Culture,generalist_radio,10
+radio-FIF-143447,radio,FIF,France Info,generalist_radio,14
+radio-FIF-164413,radio,FIF,France Info,generalist_radio,16
+radio-FIF-175908,radio,FIF,France Info,generalist_radio,17
+radio-FIF-222221,radio,FIF,France Info,generalist_radio,22
+radio-FIF-223325,radio,FIF,France Info,generalist_radio,22
+radio-FIP-065712,radio,FIP,FIP,music_radio,6
+radio-FIP-174614,radio,FIP,FIP,music_radio,17
+radio-FIP-220055,radio,FIP,FIP,music_radio,22
+radio-FIP-222530,radio,FIP,FIP,music_radio,22
+radio-FIT-013224,radio,FIT,France Inter,generalist_radio,1
+radio-FIT-020307,radio,FIT,France Inter,generalist_radio,2
+radio-FIT-202337,radio,FIT,France Inter,generalist_radio,20
+radio-FIT-230305,radio,FIT,France Inter,generalist_radio,23
+radio-FMU-000842,radio,FMU,France Musique,music_radio,0
+radio-FMU-124550,radio,FMU,France Musique,music_radio,12
+radio-FUN-072856,radio,FUN,Fun Radio,music_radio,7
+radio-FUN-122734,radio,FUN,Fun Radio,music_radio,12
+radio-MUV-152706,radio,MUV,Mouv',music_radio,15
+radio-MUV-203547,radio,MUV,Mouv',music_radio,20
+radio-RMC-190319,radio,RMC,RMC,generalist_radio,19
+radio-RTL-084520,radio,RTL,RTL,generalist_radio,8
+radio-RTL-170615,radio,RTL,RTL,generalist_radio,17
+tv-ART-152238,tv,ART,Arte,generalist_tv,15
+tv-ART-174303,tv,ART,Arte,generalist_tv,17
+tv-ART-223617,tv,ART,Arte,generalist_tv,22
+tv-BFT-050937,tv,BFT,BFM TV,news_tv,5
+tv-BFT-165932,tv,BFT,BFM TV,news_tv,16
+tv-C+N-035413,tv,C+N,CNEWS,news_tv,3
+tv-C+N-072654,tv,C+N,CNEWS,news_tv,7
+tv-C+N-091809,tv,C+N,CNEWS,news_tv,9
+tv-C+N-100141,tv,C+N,CNEWS,news_tv,10
+tv-C+N-184644,tv,C+N,CNEWS,news_tv,18
+tv-C+N-231002,tv,C+N,CNEWS,news_tv,23
+tv-C+_-054514,tv,C+_,Canal+,generalist_tv,5
+tv-C+_-190401,tv,C+_,Canal+,generalist_tv,19
+tv-F24-042912,tv,F24,France 24,news_tv,4
+tv-F24-055841,tv,F24,France 24,news_tv,5
+tv-F24-075121,tv,F24,France 24,news_tv,7
+tv-F24-125747,tv,F24,France 24,news_tv,12
+tv-F24-145503,tv,F24,France 24,news_tv,14
+tv-FR3-190726,tv,FR3,France 3,generalist_tv,19
+tv-FR4-042505,tv,FR4,France 4,generalist_tv,4
+tv-FR4-203357,tv,FR4,France 4,generalist_tv,20
+tv-FR4-203954,tv,FR4,France 4,generalist_tv,20
+tv-FR5-140935,tv,FR5,France 5,generalist_tv,14
+tv-FR5-151958,tv,FR5,France 5,generalist_tv,15
+tv-LCI-145713,tv,LCI,LCI,news_tv,14
+tv-LCI-153206,tv,LCI,LCI,news_tv,15
+tv-M6_-041900,tv,M6_,M6,generalist_tv,4
+tv-T5M-073851,tv,T5M,TV5 Monde,generalist_tv,7
+tv-TF1-021706,tv,TF1,TF1,generalist_tv,2
+tv-TF1-031751,tv,TF1,TF1,generalist_tv,3
 radio-FBL-011904,radio,FBL,France Bleu,music_radio,1
 radio-FBL-025455,radio,FBL,France Bleu,music_radio,2
 radio-FBL-035452,radio,FBL,France Bleu,music_radio,3
