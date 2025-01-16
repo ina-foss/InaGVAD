@@ -47,6 +47,8 @@ def annot2vad(annot):
             tl.add(seg)
     return tl.support().to_annotation()
 
+nonspeech = ['applause', 'noise', 'hubbub', 'jingle', 'fg_music', 'bg_music', 'respiration', 'laughers', 'other', 'empty']
+
 class VadEval:
     def __init__(self, collar=0.3):
         self.da = DetectionAccuracy(collar=collar)
@@ -75,6 +77,24 @@ class VadEval:
         ref = annot2vad(refannot)
         pred = annot2vad(csv2annot(pred_csv))
         return self(ref, pred, uem, base, reset=reset)
+
+    def compare_csv_detailed_falsealarm(self, ref_csv, pred_csv, reset = False):
+        predannot = annot2vad(csv2annot(pred_csv))
+        refannot = Annotation()
+        
+        ref = pd.read_csv(ref_csv)
+        dret = {}
+        for cat in nonspeech:
+            uem = Timeline()
+            for t in ref[ref[cat] == True].itertuples():
+                uem.add(Segment(t.start, t.stop))
+            uem = uem.support()
+            ret = self(refannot, predannot, uem)
+            dret[(cat, 'total')] = uem.duration()
+            dret[(cat, 'fa')] = ret['false positive']
+        if reset:
+            self.reset()
+        return dret
     
     def compare_lfiles(self, lref, lpred, reset=True):
         """
@@ -120,12 +140,27 @@ class VadEval:
         dfdetail, dret = self.compare_lfiles(src, dst)
         self.reset()
         return dfdetail, dret
-
+        
+    def false_alarm_analysis(self, ref_dir, pred_dir, csvfname):
+        df = pd.read_csv(csvfname)
+        src =  df.fileid.map(lambda x: '%s/annotations/detailed_csv/%s.csv' % (ref_dir, x))
+        dst = df.fileid.map(lambda x: '%s/%s.csv' % (pred_dir, x))
+        ld = [self.compare_csv_detailed_falsealarm(f1, f2) for (f1, f2) in zip(src, dst)]
+        ret_details = pd.DataFrame.from_dict(ld)
+        stats = ret_details.sum()
+        d = {}
+        for cat in nonspeech:
+            d[cat] = 100 * stats[(cat, 'fa')] / stats[(cat, 'total')]
+        return ret_details, d
+    
+    
     def evaluation(self, reference_path, predictions_path, eval_set, eval_type):
         if eval_set in ['dev', 'test']:
             csvfname = '%s/annotations/filesplit/%sset.csv' % (reference_path, eval_set)
+        elif eval_set == 'all':
+            csvfname = '%s/annotations/filesplit/all.csv' % (reference_path)
         else:
-            raise Exception('eval_set argument must be "dev" or "test" for evaluating on development or test set')
+            raise Exception('eval_set argument must be in {dev, test, all} for chosing evaluation set. Paper results are obtained on test set')
         assert os.path.exists(csvfname), '%s is a bad annotation reference_path : should be of the form <inaGVAD git repos path>' % reference_path
 
         assert eval_type in ['global', 'channel_type', 'detailed_false_alarms'], '"%s" is not a valid eval_type argument : should be "global", "channel_type", "detailed_false_alarms"' % eval_type
@@ -133,5 +168,7 @@ class VadEval:
             return self.compare_csvset(reference_path , predictions_path, csvfname)
         elif eval_type == 'channel_type':
             return self.compare_category(reference_path, predictions_path, 'channel_category', csvfname)
+        elif eval_type == 'detailed_false_alarms':
+            return self.false_alarm_analysis(reference_path, predictions_path, csvfname)
         else:
             raise NotImplementedError('')
