@@ -78,6 +78,25 @@ The function returns 2 arguments :
 
 ## Evaluating Speaker Gender Segmentation (SGS) systems
 
+```
+from inaGVAD.gender_metrics import GenderEval
+ge = GenderEval()
+ge.evaluation(reference_path, prediction_path, eval_set, gender_detail, chancat_detail)
+```
+
+with : 
+* `reference_path` : path to inaGVAD github repository local copy (ex: './')
+* `predictions_path` : directortory containing SGS predictions in csv (ex: ./automatic_baselines/{ecapa,inaspeechsegmenter,liumspkdiarization_csv})
+* `eval_set` : use `dev`, `test` or `all` for chosing the evaluation set. To obtain results in same conditions as inaGVAD's paper, use `test` set.
+* `gender_detail` : `True` for detailed metrics per gender, `False` otherwise
+* `chancat_detail` : `True` for detailed results per channel categories, `False` otherwise
+
+Reproducing paper's tables with inaspeechsegmenter SGS:
+* Table 10 : `ge.evaluation('./', './automatic_baselines/inaspeechsegmenter' , 'test', True, False)`
+* Table 11 : `ge.evaluation('./', './automatic_baselines/inaspeechsegmenter' , 'test', False, True)`
+
+
+
 ## Training a new system
 
 
